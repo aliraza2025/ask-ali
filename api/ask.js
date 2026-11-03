@@ -8,7 +8,7 @@ const index = buildIndex(knowledge.chunks);
 
 const ALLOWED_ORIGINS = (
   process.env.ALLOWED_ORIGINS ||
-  "https://alirazaportfolio2026.netlify.app,http://127.0.0.1:8765,http://localhost:8765"
+  "https://alirazatech.dev,https://www.alirazatech.dev,https://alirazatech.pages.dev,https://alirazaportfolio2026.netlify.app,http://127.0.0.1:8765,http://localhost:8765"
 )
   .split(",")
   .map((s) => s.trim())
