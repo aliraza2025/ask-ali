@@ -9,7 +9,10 @@ if (!endpoint) {
   console.error("Usage: node scripts/eval-answers.mjs <endpoint-url>");
   process.exit(1);
 }
-const questions = JSON.parse(readFileSync(new URL("../evals/questions.json", import.meta.url), "utf8"));
+// Optional start/end let you stay under the per-visitor rate limit (8 questions per 5 minutes).
+const start = Number(process.argv[3] || 0);
+const end = Number(process.argv[4] || Infinity);
+const questions = JSON.parse(readFileSync(new URL("../evals/questions.json", import.meta.url), "utf8")).slice(start, end);
 const REFUSAL = /(doesn't|does not|don't|do not|isn't|is not|not) (cover|have|include|mention|available|listed|able)|contact page|book(ing)? a call|can't help|cannot help|only answer/i;
 
 let pass = 0;

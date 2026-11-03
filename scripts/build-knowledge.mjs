@@ -28,6 +28,9 @@ const PAGES = [
 
 const MAX_CHUNK = 1400;
 
+// Boilerplate sections that crowd out real answers in keyword search.
+const SKIP_HEADINGS = /^(references|suggested citation|join the discussion|share|related|leave a message|contents|on this page)\b/i;
+
 const ENTITIES = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " ", middot: "·", rsquo: "’", lsquo: "‘", ldquo: "“", rdquo: "”", ndash: "-", mdash: "-", hellip: "…", rarr: "→" };
 
 function decode(s) {
@@ -112,6 +115,7 @@ for (const page of PAGES) {
   const html = readFileSync(join(siteDir, page.file), "utf8");
   const pageTitle = decode((html.match(/<title>([^<]*)<\/title>/i) || [, page.title])[1]).trim();
   for (const s of sections(stripChrome(html))) {
+    if (SKIP_HEADINGS.test(s.heading)) continue;
     for (const text of splitLong(s.text)) {
       if (text.length < 40) continue;
       chunks.push({
