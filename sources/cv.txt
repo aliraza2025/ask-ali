@@ -1,0 +1,47 @@
+Ali Raza
+Hayward, CA | axraza55@gmail.com | linkedin.com/in/ali-raza-2548880 | github.com/aliraza2025 | alirazaportfolio2026.netlify.app
+
+EDUCATION
+California State University, East Bay | Master of Science in Business Analytics, expected Dec 2026 STEM-designated program with coursework in machine learning, deep learning, data mining, text mining, SQL/Python analytics, and data-driven decision making
+
+SKILLS
+PRODUCT MANAGEMENT Product discovery, customer discovery, product strategy, product requirements, PRDs, roadmap planning, prioritization, success metrics, product lifecycle, experimentation, user feedback, launch planning, stakeholder alignment, cross-functional collaboration
+
+DATA & ANALYTICS
+SQL, Python, Tableau, product analytics, user and market analysis, KPI and success metrics, funnel analysis, conversion analysis, A/B testing, data-driven decision making
+
+TECHNICAL & AI
+FastAPI, Next.js, SQLite, Fly.io, Playwright, AI-assisted prototyping, LLM workflows, prompt engineering, responsible AI evaluation, GitHub, Cursor, Codex, Claude Code
+
+WORK EXPERIENCE
+Blue Ocean Window Cleaning | Business Operations Intern | San Diego, CA | Jun 2026 – Sep 2026
+- Gathered requirements directly from the owner and staff, translating business and user needs into product requirements for a Next.js quoting application using HouseCall Pro data.
+- Prioritized workflow improvements by balancing staff feedback, business impact, and implementation effort, carrying the highest-value changes through testing, iteration, production launch, and handoff.
+- Built data and optimization tools to guide pricing and operational decisions, including a staffing model that identified ~$3,400/month in potential slow-season savings.
+
+Analogic | Product Management Intern | Boston, MA | Aug 2025 – May 2026
+- Partnered with engineering and sales to translate complex semiconductor product capabilities, technical constraints, and customer needs into clear use cases, positioning, and launch priorities.
+- Developed technical customer-facing assets for SEMICON West 2025, helping prospective buyers evaluate product value, constraints, and application fit.
+
+AtlasNova AI | Product Management Intern | Berkeley, CA | Feb 2025 – Jun 2025
+- Conducted customer, market, and competitive research for an AI-native B2B platform, translating findings into product positioning and go-to-market decisions.
+- Partnered with product and engineering to synthesize customer feedback and market insights into clearer product priorities and launch materials.
+
+TECNO Mobile | Product Development Manager | Jun 2023 – Aug 2024
+- Analyzed user, engagement, and product performance data to identify opportunities, define KPI insights, and inform product and campaign decisions across cross-functional teams.
+
+Telenor | Digital Product Manager | Jan 2023 – Jun 2023
+- Analyzed KPI, funnel, and performance data to identify conversion gaps and inform product and channel prioritization decisions.
+
+Garena Free Fire | Product Associate | Jan 2022 – Dec 2022
+- Analyzed community, user, and campaign data to identify audience insights and inform content and product decisions, reaching 118M users and generating 18M engagements.
+
+OPPO Mobile | Product Associate | Jan 2020 – Jan 2022
+- Translated product launch goals into creator and cross-platform execution strategies, generating 60M+ impressions and 1.5M+ engagements.
+
+PROJECTS
+CrediClip, AI Credibility Analysis MVP, Product Owner & Builder
+- Identified a user problem around evaluating the credibility of short-form video and defined the product workflow, requirements, and success criteria for an AI credibility product across TikTok, Instagram, and YouTube Shorts.
+- Designed and shipped the product using FastAPI, OCR/ASR extraction, queue-backed processing, SQLite, Playwright, and selective LLM-based claim assessment.
+- Developed evidence-aware scoring and uncertainty handling to turn noisy inputs into credibility scores, risk flags, evidence coverage, and claim-level explanations, iterating on output quality and reliability.
+- Owned the product end to end from problem definition and workflow design through prototyping, testing, debugging, deployment, and iteration.

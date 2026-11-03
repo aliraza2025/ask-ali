@@ -1,0 +1,16 @@
+{
+  "name": "ask-ali",
+  "version": "0.1.0",
+  "description": "A portfolio assistant that answers only from the site's own pages and cites them.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build:knowledge": "node scripts/build-knowledge.mjs",
+    "eval:retrieval": "node scripts/eval-retrieval.mjs",
+    "eval:answers": "node scripts/eval-answers.mjs"
+  }
+}
