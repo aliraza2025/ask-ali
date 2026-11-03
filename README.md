@@ -1,6 +1,6 @@
 # Ask Ali
 
-A small assistant for my [portfolio](https://alirazaportfolio2026.netlify.app) that answers visitors' questions
+A small assistant for my [portfolio](https://alirazaai.page) that answers visitors' questions
 using only the site's own pages and my CV, and links to the page each answer comes from. When the site doesn't
 cover something, it says so instead of guessing.
 

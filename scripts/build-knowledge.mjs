@@ -8,7 +8,7 @@ import { fileURLToPath } from "node:url";
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const siteDir = process.argv[2];
-const siteUrl = (process.argv[3] || "https://alirazaportfolio2026.netlify.app").replace(/\/$/, "");
+const siteUrl = (process.argv[3] || "https://alirazaai.page").replace(/\/$/, "");
 
 if (!siteDir) {
   console.error("Usage: node scripts/build-knowledge.mjs <portfolio-dir> [site-url]");
