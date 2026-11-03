@@ -24,6 +24,7 @@ const PAGES = [
   { file: "contact.html", path: "/contact", title: "Contact" },
   { file: "about-this-site.html", path: "/about-this-site", title: "About this site" },
   { file: "sources.html", path: "/sources", title: "Sources" },
+  { file: "notes/index.html", path: "/notes/", title: "Field notes" },
   { file: "notes/crediclip-data-plane.html", path: "/notes/crediclip-data-plane", title: "Field note: CrediClip data plane" },
   { file: "notes/crediclip-ai-product-quality.html", path: "/notes/crediclip-ai-product-quality", title: "Field note: CrediClip AI product quality" },
   { file: "notes/estimator-data-plane.html", path: "/notes/estimator-data-plane", title: "Field note: Blue Ocean estimator data plane" },
