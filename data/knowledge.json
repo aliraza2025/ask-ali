@@ -1,17 +1,25 @@
 {
  "site": "https://alirazaportfolio2026.netlify.app",
- "builtAt": "2026-11-03T20:32:24.773Z",
+ "builtAt": "2026-11-03T20:53:34.167Z",
  "chunks": [
   {
    "id": 0,
    "page": "Home",
    "pageTitle": "Ali Raza · Product Manager · Data Analyst · AI Builder",
-   "heading": "I'm Ali\nRaza",
-   "url": "https://alirazaportfolio2026.netlify.app/#hero-heading",
-   "text": "I'm Ali\nRaza\nProduct Manager · Data Analyst · AI Builder\nProduct-minded builder who uses data and AI to design, prototype, and ship real products and not just decks.\nView Case Studies\nDownload CV\n118M\nUsers reached\n60M+\nImpressions generated\n0→1\nAI MVPs shipped\nMSBA\nExpected Dec 2026"
+   "heading": "",
+   "url": "https://alirazaportfolio2026.netlify.app/#hero",
+   "text": "Ali Raza · Product Manager · Data Analyst · AI Builder"
   },
   {
    "id": 1,
+   "page": "Home",
+   "pageTitle": "Ali Raza · Product Manager · Data Analyst · AI Builder",
+   "heading": "I build real products, not just decks .",
+   "url": "https://alirazaportfolio2026.netlify.app/#hero-heading",
+   "text": "I build real products, not just decks .\nLook around the studio, or ask Ali’s AI about my work.\nMeet Ali’s AI\nView case studies\nDownload CV\nAI receptionist venture\nirha.ai\nHardware launch\nAnalogic AVA\nThe human behind the AI\nExperience\nProduct, data, growth\nCase studies\nVideo credibility AI\nCrediClip\nWhere claims come from\nSources\nAli’s AI\nWhat is CrediClip?\nWhat does Ali do at irha.ai?\nWhat did Ali build at Blue Ocean?\nHow can I reach Ali?\nAI receptionist venture irha.ai\nHardware launch Analogic AVA\nThe human behind the AI Experience\nProduct, data, growth Case studies\nVideo credibility AI CrediClip\nWhere claims come from Sources\nPause motion\nSpoken answers\nSimple view\nHide avatar\n118M\nUsers reached\n60M+\nImpressions generated\n0→1\nAI MVPs shipped\nMSBA\nExpected Dec 2026"
+  },
+  {
+   "id": 2,
    "page": "Home",
    "pageTitle": "Ali Raza · Product Manager · Data Analyst · AI Builder",
    "heading": "Case Studies",
@@ -19,7 +27,7 @@
    "text": "Case Studies\nProduct and growth work at the intersection of data, strategy, and execution,\nfrom shipped MVPs to campaigns at global scale.\nFeatured · Case Study 01\nProduct Owner\nFastAPI\nAI / LLM\n0 → 1 MVP"
   },
   {
-   "id": 2,
+   "id": 3,
    "page": "Home",
    "pageTitle": "Ali Raza · Product Manager · Data Analyst · AI Builder",
    "heading": "CrediClip",
@@ -27,7 +35,7 @@
    "text": "CrediClip\nProblem\nLow-trust short-form video content leaves viewers without clear credibility signals across TikTok, Instagram, and YouTube Shorts.\nMy role\nProduct Owner & Builder who owned the product from problem definition and workflow design through AI prototyping, testing, and deployment.\nResult\nShipped a FastAPI AI workflow with OCR/ASR extraction, queue-backed processing, SQLite persistence, and Playwright recovery, turning messy video inputs into credibility scores, risk flags, evidence coverage, and claim-level notes.\nRead Case Study\nLive Demo\nDownload PDF\nGitHub\nEngineering Notes\nData Plane\nCase Study 02\nHardware PM\nGTM\nSemiconductor"
   },
   {
-   "id": 3,
+   "id": 4,
    "page": "Home",
    "pageTitle": "Ali Raza · Product Manager · Data Analyst · AI Builder",
    "heading": "Analogic: AVA RF Generator Launch",
@@ -35,7 +43,7 @@
    "text": "Analogic: AVA RF Generator Launch\nProblem\nA new line of pulsed RF plasma generators (AVA 1213, 3013, 6013) needed a product identity, launch kit, and digital presence for SEMICON West 2025.\nResult\nBuilt the AVA brand identity, banners, brochures, booth concepts, and LinkedIn plan, supporting 170+ booth demos, 60+ product-info requests, and 20+ partnership leads; then planned the AVA website and content engine for 2026.\nView Presentation\nAVA Website\nCase Study 03\nStartup\nAI Voice Agent\nB2B SaaS"
   },
   {
-   "id": 4,
+   "id": 5,
    "page": "Home",
    "pageTitle": "Ali Raza · Product Manager · Data Analyst · AI Builder",
    "heading": "irha.ai: AI Receptionist for Service Businesses",
@@ -43,7 +51,7 @@
    "text": "irha.ai: AI Receptionist for Service Businesses\nProblem\nService businesses lose jobs to missed after-hours calls, overloaded office staff, and voicemails customers won’t leave, while leads slip between phone, SMS, and CRM.\nMy role\nCo-founder, Product. I own product strategy and roadmap, voice agent and call flow design, CRM integrations, positioning and pricing, the website and demo, and customer discovery and sales.\nResult\nBuilt a 24/7 AI receptionist that answers, triages, and books calls and hands off to Housecall Pro, Jobber, and ServiceTitan, with a self-serve trial and three usage-based plans from $99 to $225 a month. Now in early access.\nVisit irha.ai\nLinkedIn\nCase Study 04\nOperations\nNext.js\nHouseCall Pro"
   },
   {
-   "id": 5,
+   "id": 6,
    "page": "Home",
    "pageTitle": "Ali Raza · Product Manager · Data Analyst · AI Builder",
    "heading": "Blue Ocean Window Cleaning",
@@ -51,7 +59,7 @@
    "text": "Blue Ocean Window Cleaning\nProblem\nBlue Ocean runs jobs, scheduling, and invoicing in HouseCall Pro, but quoting and personal-spend reimbursements needed custom workflows HCP doesn’t capture automatically.\nResult\nAs Business Operations Intern, gathered requirements from the owner and staff, then shipped a Next.js agentic estimate tool on Fly.io with HouseCall Pro integration and HCP-aligned expense workflows. A staffing model I built identified ~$3,400/month in potential slow-season savings.\nData Plane Notes\nCase Study 05\nBrand Strategy\nSports\nCreative"
   },
   {
-   "id": 6,
+   "id": 7,
    "page": "Home",
    "pageTitle": "Ali Raza · Product Manager · Data Analyst · AI Builder",
    "heading": "49ers: Creative Content for a Global Faithful",
@@ -59,7 +67,7 @@
    "text": "49ers: Creative Content for a Global Faithful\nProblem\nWith international marketing rights in Mexico and the UK, the 49ers have room to grow a global fanbase that responds to different content than US fans.\nResult\nPitched, as a prospective intern, a creative product and brand strategy: 7 target markets and 12+ content concepts adapted from global soccer, cricket, and basketball brands.\nView Presentation\nCase Study 06\nGrowth Marketing\nB2B\nProposal"
   },
   {
-   "id": 7,
+   "id": 8,
    "page": "Home",
    "pageTitle": "Ali Raza · Product Manager · Data Analyst · AI Builder",
    "heading": "Deel Local XI: Football to B2B Pipeline",
@@ -67,7 +75,7 @@
    "text": "Deel Local XI: Football to B2B Pipeline\nProblem\nDeel has Arsenal on the world stage, but global sponsorship drives awareness, not conversations with local employers who need modern HR, payroll, and global hiring.\nResult\nProposed, independently, a 6-week Bay Area pilot with one community football club, AI-assisted and human-reviewed targeting, and a single north-star KPI: cost per sales-accepted qualified meeting.\nView Proposal\nLive Site\nCase Study 07\nAnalytics\nPython\nSHAP"
   },
   {
-   "id": 8,
+   "id": 9,
    "page": "Home",
    "pageTitle": "Ali Raza · Product Manager · Data Analyst · AI Builder",
    "heading": "MrBeast: YouTube Engagement Analysis",
@@ -75,7 +83,7 @@
    "text": "MrBeast: YouTube Engagement Analysis\nProblem\nCan a creator predict engagement before uploading, using only metadata they control such as title, length, and timing?\nResult\nModeled 250 MrBeast uploads from the YouTube Data API with tree models and SHAP; duration, Shorts format, and an 18–22h upload window were the top drivers.\nView Presentation\nGitHub\nCase Study 08\nOptimization\nPython"
   },
   {
-   "id": 9,
+   "id": 10,
    "page": "Home",
    "pageTitle": "Ali Raza · Product Manager · Data Analyst · AI Builder",
    "heading": "Burrito Game: Logistics Optimization",
@@ -83,7 +91,7 @@
    "text": "Burrito Game: Logistics Optimization\nProblem\nOptimize pricing, fleet deployment, routing, and demand coverage across a constrained distribution network.\nResult\nBuilt a Python integer-programming model with sensitivity analysis on price, ingredient cost, and fleet size, producing scenario-based recommendations for operational decisions.\nGitHub\nCase Study 09\nProduct Marketing\nAI\nSkyDeck"
   },
   {
-   "id": 10,
+   "id": 11,
    "page": "Home",
    "pageTitle": "Ali Raza · Product Manager · Data Analyst · AI Builder",
    "heading": "AtlasNova AI",
@@ -91,7 +99,7 @@
    "text": "AtlasNova AI\nProblem\nAn AI-native marketing automation platform needed clearer positioning and GTM narratives for buyers and investors.\nResult\nDefined positioning via market and competitive research; built launch content and investor materials for UC Berkeley SkyDeck Investor Month.\nCase Study 10+\nAnalytics\nMore"
   },
   {
-   "id": 11,
+   "id": 12,
    "page": "Home",
    "pageTitle": "Ali Raza · Product Manager · Data Analyst · AI Builder",
    "heading": "More Projects",
@@ -99,7 +107,7 @@
    "text": "More Projects\nIncludes\nStatistical Modeling, Data Mining, the Taiwan credit card crisis case study, and additional analytics builds on GitHub, plus the full interactive decks behind these case studies.\nView All Projects\nAll Presentations"
   },
   {
-   "id": 12,
+   "id": 13,
    "page": "Home",
    "pageTitle": "Ali Raza · Product Manager · Data Analyst · AI Builder",
    "heading": "Product-minded builder",
@@ -107,7 +115,7 @@
    "text": "Product-minded builder\nI'm Ali Raza, a product-minded builder based in Hayward, SF Bay Area, completing an M.S. in Business Analytics\nat Cal State East Bay (expected Dec 2026). I work at the intersection of product discovery,\nAI prototyping, and analytics, turning messy problems into shipped workflows.\nFrom CrediClip (an AI credibility MVP) to Blue Ocean Window Cleaning’s estimate and HouseCall Pro-aligned\nops systems, I bring FastAPI/Next.js fluency, product rigor, and cross-functional execution\nthat moves teams from insight to impact.\nDownload CV (PDF)\nProduct Management\nProduct discovery\nProduct strategy\nPRDs\nRoadmap planning\nPrioritization\nLaunch planning\nData & Analytics\nSQL\nPython\nTableau\nProduct analytics\nFunnel analysis\nA/B testing\nTechnical & AI\nFastAPI\nNext.js\nSQLite\nFly.io\nPlaywright\nLLM workflows\nPrompt engineering"
   },
   {
-   "id": 13,
+   "id": 14,
    "page": "Home",
    "pageTitle": "Ali Raza · Product Manager · Data Analyst · AI Builder",
    "heading": "Creative Portfolio",
@@ -115,7 +123,7 @@
    "text": "Creative Portfolio\nSelected creative work across video and writing.\nThese samples show how I shape brand stories and audience engagement beyond product builds.\nVideo Portfolio\nA collection of video projects covering narrative, brand, and campaign-led storytelling.\nWatch on Vimeo\nCreative Blog\nWritten creative work and essays from major study and personal creative practice.\nRead writing"
   },
   {
-   "id": 14,
+   "id": 15,
    "page": "Home",
    "pageTitle": "Ali Raza · Product Manager · Data Analyst · AI Builder",
    "heading": "Get in Touch",
@@ -123,7 +131,7 @@
    "text": "Get in Touch\nBased in Hayward, SF Bay Area. Leave a message below and it goes straight to my inbox,\nbook a 30-minute call, or reach me on LinkedIn, GitHub, or email."
   },
   {
-   "id": 15,
+   "id": 16,
    "page": "Experience",
    "pageTitle": "Ali Raza · Experience",
    "heading": "Experience",
@@ -131,7 +139,7 @@
    "text": "Experience\nProduct management, analytics, and go-to-market across global tech brands.\nDownload CV\nEducation\nCalifornia State University, East Bay\nM.S. Business Analytics · STEM-designated\nExpected Dec 2026 · Hayward, SF Bay Area\n6+\nYears in product & growth\n118M\nUsers reached\n60M+\nImpressions generated\n3\nInternships (AI, hardware & operations)\nCompanies I've worked with\nBlue Ocean Window Cleaning\nAnalogic\nAnalogic\nAtlasNova\nAtlasNova AI\nTECNO\nTECNO Mobile\nTelenor\nTelenor\nGarena\nGarena Free Fire\nOPPO\nOPPO Mobile\nWork History\n1\nBlue Ocean Window Cleaning\nBusiness Operations Intern\nJun 2026 – Sep 2026\nSan Diego, CA\nProduct Requirements\nNext.js\nHouseCall Pro\nOptimization\nGathered requirements directly from the owner and staff, translating business and user needs into product requirements for a Next.js quoting application using HouseCall Pro data.\nPrioritized workflow improvements by balancing staff feedback, business impact, and implementation effort, carrying the highest-value changes through testing, iteration, production launch, and handoff.\nBuilt data and optimization tools to guide pricing and operational decisions, including a staffing model that identified ~$3,400/month in potential slow-season savings.\nEstimator data plane notes\n2\nAnalogic\nProduct Management Intern\nAug 2025 – May 2026\nBoston, MA\nGTM\nHardware\nSEMICON\nBrand Identity"
   },
   {
-   "id": 16,
+   "id": 17,
    "page": "Experience",
    "pageTitle": "Ali Raza · Experience",
    "heading": "Experience",
@@ -139,7 +147,7 @@
    "text": "Partnered with engineering and sales to translate complex semiconductor product capabilities, technical constraints, and customer needs into clear use cases, positioning, and launch priorities.\nDeveloped technical customer-facing assets for SEMICON West 2025, helping prospective buyers evaluate product value, constraints, and application fit.\nBuilt the AVA visual identity and launch kit (logo, banners, tri-fold brochure, datasheets, booth concepts, LinkedIn plan), supporting 170+ booth demos, 60+ product-info requests, and 20+ high-priority partnership leads.\nPlanned Phase 2 for 2026: an AVA website roadmap and wireframes, a competitive web audit, and a brand video, podcast, and newsletter content engine.\nView presentation\nAVA website\n3\nAtlasNova AI\nProduct Management Intern\nFeb 2025 – Jun 2025\nBerkeley, CA\nAI\nCustomer Research\nPositioning\nConducted customer, market, and competitive research for an AI-native B2B platform, translating findings into product positioning and go-to-market decisions.\nPartnered with product and engineering to synthesize customer feedback and market insights into clearer product priorities and launch materials.\n4\nTECNO Mobile\nProduct Development Manager\nJun 2023 – Aug 2024\nAnalytics\nKPI Insights"
   },
   {
-   "id": 17,
+   "id": 18,
    "page": "Experience",
    "pageTitle": "Ali Raza · Experience",
    "heading": "Experience",
@@ -147,7 +155,7 @@
    "text": "Analyzed user, engagement, and product performance data to identify opportunities, define KPI insights, and inform product and campaign decisions across cross-functional teams.\n5\nTelenor\nDigital Product Manager\nJan 2023 – Jun 2023\nConversion\nFunnel Analysis\nAnalyzed KPI, funnel, and performance data to identify conversion gaps and inform product and channel prioritization decisions.\n6\nGarena Free Fire\nProduct Associate\nJan 2022 – Dec 2022\nGaming\n118M users\nAnalyzed community, user, and campaign data to identify audience insights and inform content and product decisions, reaching 118M users and generating 18M engagements.\n7\nOPPO Mobile\nProduct Associate\nJan 2020 – Jan 2022\nLaunch Strategy\n60M+ impressions\nTranslated product launch goals into creator and cross-platform execution strategies, generating 60M+ impressions and 1.5M+ engagements.\nCore Skills\nProduct Management\nProduct discovery\nProduct strategy\nPRDs\nRoadmap planning\nPrioritization\nExperimentation\nLaunch planning\nStakeholder alignment\nData & Analytics\nSQL\nPython\nTableau\nProduct analytics\nKPIs & success metrics\nFunnel analysis\nA/B testing\nTechnical & AI\nFastAPI\nNext.js\nSQLite\nFly.io\nPlaywright\nLLM workflows\nPrompt engineering\nResponsible AI evaluation\nCursor\nClaude Code"
   },
   {
-   "id": 18,
+   "id": 19,
    "page": "Projects",
    "pageTitle": "Ali Raza · Projects",
    "heading": "Projects",
@@ -155,7 +163,7 @@
    "text": "Projects\nMy venture work, plus a selection of repositories and builds from my GitHub.\nView GitHub Profile"
   },
   {
-   "id": 19,
+   "id": 20,
    "page": "Projects",
    "pageTitle": "Ali Raza · Projects",
    "heading": "Ventures",
@@ -163,7 +171,7 @@
    "text": "Ventures\nirha.ai (opens in new tab)\nCo-founder, Product\nAI receptionist for service businesses. It answers calls 24/7, books and confirms jobs, captures and qualifies leads, and hands off to Housecall Pro, Jobber, and ServiceTitan.\nI lead product strategy and roadmap, voice agent and call flow design, CRM integrations, positioning and pricing, the website and demo, and customer discovery and sales.\nAI voice agent\nB2B SaaS\nEarly access\nWebsite\nLinkedIn"
   },
   {
-   "id": 20,
+   "id": 21,
    "page": "Projects",
    "pageTitle": "Ali Raza · Projects",
    "heading": "GitHub repositories",
@@ -171,7 +179,7 @@
    "text": "GitHub repositories\nRecently updated\nMost stars\nName A–Z\nInclude forks\nLoading repositories…\nFetching from GitHub API"
   },
   {
-   "id": 21,
+   "id": 22,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "",
@@ -179,7 +187,7 @@
    "text": "Home / Work / CrediClip\nCase Study 01 · Research Write-up"
   },
   {
-   "id": 22,
+   "id": 23,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video",
@@ -187,7 +195,7 @@
    "text": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video\nHow I framed, designed, built, and evaluated an AI system that turns a public TikTok, Instagram, or YouTube Shorts\nlink into an explainable credibility score, and why the most important feature turned out to be knowing when\nnot to be confident.\nBy Ali Raza\n•\nM.S. Business Analytics, Cal State East Bay\n•\nPublished October 7, 2026\n•\n~18 min read\nTry the live demo\nSource on GitHub\nChronicle deck\nSlides (PDF)\nLinkedIn post\nEngineering notes\nCopy link\nPeople, places & pages\n@Ali Raza\n@Cal State East Bay\n@GitHub · CrediClip\n@CrediClip Live\n@LinkedIn Post\n@CrediClip Engineering Notes\n@Data Plane Deep Dive\n@Chronicle\n@Projects\n@Experience\nTools & platforms\n@FastAPI\n@Fly.io\n@Oracle Cloud\n@Playwright\n@OpenAI\n@Ollama\n@faster-whisper\n@Tesseract OCR\n@yt-dlp\n@Kaggle\n@TikTok\n@Instagram\n@YouTube Shorts\nTopics\n#ProductManagement\n#AI\n#TrustAndSafety\n#Misinformation\n#MachineLearning\n#LLM\n#BusinessAnalytics\n#MSBA\n#ShortFormVideo\n#BuildInPublic\nContents\nAbstract\n1. Introduction\n2. Background & related work\n3. Product framing\n4. System architecture\n5. Evidence extraction\n6. Claim verification\n7. Scoring model\n8. Build log\n9. Evaluation & results\n10. Discussion\n11. Limitations & ethics\n12. Applications\n13. Future work\n14. Conclusion\nTools & stack\nReferences\nCite & share"
   },
   {
-   "id": 23,
+   "id": 24,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "",
@@ -195,7 +203,7 @@
    "text": "Abstract\nShort-form video is now a primary channel for news, advice, and commerce, yet viewers rarely have a fast way to judge\nwhether a clip is credible. This write-up documents CrediClip , a multi-platform system that accepts a\npublic TikTok, Instagram, or YouTube Shorts URL and returns a 0 to 100 credibility score, risk flags for misinformation,\nscams, manipulation, and uncertainty, claim-level notes, and an explicit evidence-coverage breakdown. The system separates\na lightweight control plane on @Fly.io\nfrom heavy media workers on @Oracle Cloud\nthat perform browser rendering, OCR, and speech recognition. A deterministic scoring engine combines six signals and,\ncritically, shrinks its output toward a neutral anchor when evidence is thin. Large language models are used only for\ngated claim assessment, never for the final number. Across a 780-link YouTube batch the system completed every job\nwhile correctly refusing to be confident on 97% of low-evidence inputs, and a worker-backed redesign for Instagram raised\naverage extracted evidence from 1 token to 131 tokens per video. I discuss the design decisions, the failed benchmark\ngates that forced them, and the limitations that remain.\nKeywords: credibility assessment, misinformation, short-form video, multimodal evidence extraction, OCR, ASR, LLM gating, trust and safety, explainable scoring, product management"
   },
   {
-   "id": 24,
+   "id": 25,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "1. Introduction",
@@ -203,7 +211,7 @@
    "text": "1. Introduction\nA 30-second clip can travel to millions of people before anyone checks its source. Research on social platforms has shown\nthat false stories spread farther, faster, and deeper than true ones, largely because novelty and emotional charge drive\nsharing [1] . Short-form video amplifies that dynamic: the format is fast,\nthe context is minimal, and the persuasive layer (music, captions, a confident face) does a lot of work that text alone cannot.\nI framed the problem around four failure modes a viewer faces, which later became the system's risk dimensions:\nMisinformation: false or distorted claims spread before anyone can verify the source or context.\nScams: deceptive intent hidden behind polished content, fake offers, and manufactured urgency.\nManipulation: emotional pressure or synthetic media used to bypass critical thinking.\nUncertainty: unclear origin and weak context that leave viewers without trustworthy signals.\nFigure 1. The four problem dimensions that shaped CrediClip's risk model.\nThe project was guided by three research questions:\nRQ1. Can a single link-only workflow recover enough evidence (captions, transcripts, on-screen text, speech) from three very different platforms to support a credibility judgment?\nRQ2. Can credibility be scored in a way that is explainable and reproducible , rather than delegated to a black-box model?"
   },
   {
-   "id": 25,
+   "id": 26,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "1. Introduction",
@@ -211,7 +219,7 @@
    "text": "RQ3. How should the system behave when evidence is missing, so that it does not manufacture false confidence?"
   },
   {
-   "id": 26,
+   "id": 27,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "2. Background & related work",
@@ -219,7 +227,7 @@
    "text": "2. Background & related work\nCrediClip sits at the intersection of three research areas, each with a well-known benchmark that informed the design."
   },
   {
-   "id": 27,
+   "id": 28,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "2.1 Claim verification",
@@ -227,7 +235,7 @@
    "text": "2.1 Claim verification\nFEVER framed fact checking as retrieving evidence and classifying a claim as Supported ,\nRefuted , or Not Enough Info [2] . CrediClip adopts the same\nthree-way label set ( supported , refuted , not_enough_evidence ). The third label is\nthe most important one for this domain, because most short-form clips do not contain enough verifiable text to settle a claim."
   },
   {
-   "id": 28,
+   "id": 29,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "2.2 Synthetic and manipulated media",
@@ -235,7 +243,7 @@
    "text": "2.2 Synthetic and manipulated media\nFaceForensics++ [3] and the\nDeepFake Detection Challenge (DFDC) [4] established visual\nbenchmarks for manipulated faces, and ASVspoof [5] did the same\nfor spoofed and synthetic speech. These datasets define the reference frame for the manipulation and generation-origin signals.\nIn this MVP, manipulation is scored from textual and disclosure cues plus an optional\n@AI or Not API hook; formal\nevaluation against these visual and audio benchmarks is listed as future work (Section 13)."
   },
   {
-   "id": 29,
+   "id": 30,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "2.3 Speech and text extraction",
@@ -243,7 +251,7 @@
    "text": "2.3 Speech and text extraction\nTwo open-source components made link-only analysis feasible: OpenAI's Whisper family for robust speech\nrecognition [6] , used here through the\n@faster-whisper\nimplementation, and Tesseract for OCR of on-screen text [7] .\nOn-screen captions are often where short-form creators put their actual claims, so OCR is not a nice-to-have; it is a primary evidence channel."
   },
   {
-   "id": 30,
+   "id": 31,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "3. Product framing",
@@ -251,7 +259,7 @@
    "text": "3. Product framing\nI approached CrediClip as a product owner first and a builder second. Before writing code, I defined who the user is, what\njob they are hiring the product to do, and what a minimum credible output looks like."
   },
   {
-   "id": 31,
+   "id": 32,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "3.1 Users and jobs to be done",
@@ -259,7 +267,7 @@
    "text": "3.1 Users and jobs to be done\nEveryday viewers who want a quick \"should I trust this?\" signal before sharing.\nModerators and trust-and-safety teams who need to triage large volumes of video with evidence attached.\nFact-checkers and researchers who need a fast first pass to decide what deserves human review."
   },
   {
-   "id": 32,
+   "id": 33,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "3.2 Product principles",
@@ -267,7 +275,7 @@
    "text": "3.2 Product principles\nLink in, evidence out. The only required input is a URL. Caption and transcript fields are optional accelerators.\nExplain every number. Each score ships with the signals, flags, and evidence counts that produced it.\nNever fake certainty. When the system cannot see enough, the score says so by staying near neutral.\nKeep the score deterministic. The same evidence should always produce the same score, which makes the system auditable."
   },
   {
-   "id": 33,
+   "id": 34,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "3.3 The user flow",
@@ -275,7 +283,7 @@
    "text": "3.3 The user flow\nPaste a link. The user submits any public short-form video URL.\nDetect the platform. The system identifies Instagram, TikTok, or YouTube Shorts and routes to the right pipeline.\nExtract evidence. Workers pull metadata, captions, transcripts, OCR text, speech, and browser-rendered content.\nScore the signals. The engine evaluates misinformation, scam, AI content, manipulation, confidence, and evidence quality.\nShow the result. The user receives a compact, score-first card with plain-language explanations."
   },
   {
-   "id": 34,
+   "id": 35,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "4. System architecture",
@@ -283,7 +291,7 @@
    "text": "4. System architecture\nThe first version ran everything inside a single web process. That broke quickly: video download, Whisper transcription, and\nheadless browsers are memory-hungry, and the small Fly machine was killed by out-of-memory errors under load. The fix was an\narchitectural split between a control plane and a data plane .\nControl plane · Fly.io\nFastAPI Link intake, /api/analyze , job APIs\nSQLite queue Persistent volume at /data/jobs.db , duplicate-job reuse\nScoring engine Deterministic six-signal aggregation\nDashboard Queue health, worker lanes, job detail\n↓ workers claim jobs · ↑ workers upload evidence artifacts\nData plane · Oracle Cloud VMs\nLane A Instagram + TikTok · Playwright, Tesseract OCR, faster-whisper, yt-dlp\nLane B Instagram + TikTok · parallel capacity with warm Chromium reuse\nLane C YouTube only · ffmpeg, browser fallback, OCR, ASR\n↓ final JSON report\nOutput\nResult card Score, risk flags, claim notes, evidence coverage\nThe request lifecycle follows five API steps: the client submits a URL ( POST /api/jobs ), a worker claims it\n( POST /api/jobs/claim ), the worker performs rich ingestion and uploads artifacts\n( POST /api/jobs/{id}/artifacts ), the server computes the final score, and the client polls for the result\n( GET /api/jobs/{id} ). This keeps the public web tier small and cheap while pushing expensive work to machines\nthat can afford it."
   },
   {
-   "id": 35,
+   "id": 36,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "4. System architecture",
@@ -291,7 +299,7 @@
    "text": "A second design decision was lane isolation . YouTube jobs are frequently slowed by anti-bot checks. When\nall platforms shared one worker, a single stuck YouTube job blocked Instagram and TikTok behind it. Moving YouTube to a\ndedicated lane (Lane C) and running two parallel lanes for the other platforms removed that head-of-line blocking.\nGo deeper: engineering notes\nFor the code-level version of this section, including atomic job claiming with BEGIN IMMEDIATE , platform\nrouting filters, adapter interfaces, and stale-job recovery, read\nBuilding a Multi-Lane Data Plane for Short-Form Video Credibility Analysis [13]\non the @CrediClip Engineering Notes blog.\nFigure 2. Control plane on Fly.io, data plane on Oracle VMs, with three isolated worker lanes."
   },
   {
-   "id": 36,
+   "id": 37,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "5. Evidence extraction",
@@ -299,7 +307,7 @@
    "text": "5. Evidence extraction\nEach platform exposes different data and blocks automated access in different ways, so each needed its own pipeline that\nstill returns the same evidence contract: caption , transcript , ocr ,\nasr , and notes .\nPlatform Primary path Fallbacks Status\nInstagram\nWorker-side @Playwright browser render with authenticated session\nScreenshot OCR, media download + local Whisper ASR\nStrongest\nTikTok\nPublic metadata + browser-rendered page recovery\nScreenshot OCR, media URL discovery + ASR, fast-mode early exit\nStable\nYouTube Shorts\n@yt-dlp metadata + youtube-transcript-api\nSubtitle-track parsing, oEmbed, watch-page scrape, ffmpeg frame OCR, Whisper ASR, YouTube Data API\nWeakest\nTable 1. Platform-specific ingestion paths. All three converge on the same evidence schema before scoring.\nAn important engineering lesson was that public HTML is often useless. Instagram typically returns a generic app shell to\nunauthenticated server requests, which is why early Instagram runs extracted roughly one token of evidence per video. Real\nevidence only appeared once a headless browser rendered the page the way a human would see it, and richer audio only appeared\nonce the worker had an authenticated session for media download.\nThe system also counts what it found. Every result includes an evidence_coverage object with total tokens,"
   },
   {
-   "id": 37,
+   "id": 38,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "5. Evidence extraction",
@@ -307,7 +315,7 @@
    "text": "per-channel tokens (caption, transcript, OCR, ASR), and an overall level of low , medium , or\nhigh . That object is what lets the scoring engine, and the user, reason about how much to trust the output."
   },
   {
-   "id": 38,
+   "id": 39,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "6. Claim verification",
@@ -315,7 +323,7 @@
    "text": "6. Claim verification\nOnce text is extracted, the system identifies candidate claims and checks them against a trusted-source retrieval corpus.\nThe baseline verifier is fully open-source: it retrieves relevant evidence chunks, applies lexical support and refute checks\nwith citations, and returns not_enough_evidence when support is weak.\nHosted and local LLMs are layered on top only when the evidence justifies it . I tested three options:\n@OpenAI ( gpt-5-mini )\nfor hosted reasoning, @OpenRouter\nfree-tier models, and @Ollama\nrunning Qwen models locally on the worker. The local route proved impractical on a 1 GB Always Free VM, so production\nuses OpenAI behind a platform-aware gate:\nPlatform Min. evidence tokens Min. evidence level\nInstagram 60 medium\nTikTok 50 medium\nYouTube Shorts 20 low\nTable 2. LLM gating thresholds. Below the gate, the system falls back to open-source heuristics.\nKey design decision\nThe LLM produces structured claim assessments as JSON. It never writes the credibility score. Keeping the final number in deterministic application code means the score is reproducible, auditable, and not subject to prompt drift."
   },
   {
-   "id": 39,
+   "id": 40,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "7. Scoring model",
@@ -323,7 +331,7 @@
    "text": "7. Scoring model\nThe scoring engine converts extracted evidence and claim assessments into six component signals, each on a 0 to 100 scale\nwhere higher means more risk: misinformation , scam , manipulation ,\nuncertainty , evidence-quality penalty , and a separate generation-origin\n(AI vs human) flag. An analysis confidence value then decides how much the final score is allowed to move\naway from neutral.\n# 1. Weighted risk penalty (weights sum to 1.0)\npenalty = 0.34·misinformation + 0.24·scam + 0.18·manipulation\n+ 0.12·uncertainty + 0.12·evidence_quality_penalty\nraw = 100 − penalty\n# 2. Analysis confidence c ∈ [0, 1]\nc = 0.28·token_signal + 0.22·transcript_signal + 0.20·decisive_claims\n+ 0.15·citation_signal + 0.15·max(modality_signal, coverage_signal)\n# 3. Shrink toward a neutral anchor when evidence is thin\ncredibility = raw · c + 52 · (1 − c)\nThe third step is the heart of RQ3. With rich evidence, c approaches 1 and the score reflects the detected\nrisks. With almost no evidence, c approaches 0 and the score converges on 52 , a deliberately\nneutral value that communicates \"insufficient information\" rather than \"safe\" or \"dangerous\". This is a simple form of\nBayesian-style shrinkage: the prior is neutrality, and only evidence earns the right to move away from it."
   },
   {
-   "id": 40,
+   "id": 41,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "7.1 Component rules",
@@ -331,7 +339,7 @@
    "text": "7.1 Component rules\nMisinformation averages per-claim penalties: refuted claims add 60 plus up to 35 points by confidence; unverifiable claims add a smaller penalty; supported claims add almost nothing.\nScam scales with detected fraud cues such as guaranteed returns, urgency, and \"DM me\" patterns (20 points per cue above a base).\nManipulation weights strong synthetic cues (deepfake, face swap, voice clone) above generic AI mentions, plus an optional external detector score.\nEvidence-quality penalty blends token depth (40%), transcript presence (20%), decisive claims (23%), and citation coverage (17%)."
   },
   {
-   "id": 41,
+   "id": 42,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "7.2 Generation-origin calibration",
@@ -339,7 +347,7 @@
    "text": "7.2 Generation-origin calibration\nTo estimate whether a clip is AI-generated, I built labeled data from two\n@Kaggle sources: an AI Shorts\ndataset by @aibuttonfoundation\nand a human Shorts dataset by @prince7489 .\nWhen the human dataset turned out to contain synthetic IDs, I replaced it with labels scraped from real public human\nchannels. A logistic calibrator trained on 183 rows is blended (70/30) with the heuristic score.\nExplicit self-disclosure overrides calibration. If the caption says \"#aigenerated\" or \"made with AI\", the generation-origin\nscore is floored at 85; weaker tags floor it at 65. When such a clip also has low evidence, credibility is capped at 44 or 49\nrespectively. This fixed an early bug where clearly labeled AI videos were being calibrated back to \"human-generated likely\".\nFigure 3. From input to output: live evidence, reference datasets, analysis models, and the final scored card."
   },
   {
-   "id": 42,
+   "id": 43,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "8. Build log: how it came together",
@@ -347,7 +355,7 @@
    "text": "8. Build log: how it came together\nThe project moved in phases, each ending with a benchmark that decided what to build next. Dates come from timestamped\nreports committed to the @GitHub repository.\nFeb 25, 2026\nRepository and MVP skeleton\nFastAPI service with a synchronous /api/analyze endpoint, basic claim extraction, and a vanilla HTML/CSS/JS analyzer.\nFeb 26 – Mar 1\nFirst validation and calibration\nRandom-sample validation scripts against the live API, mixed AI/human label construction, and threshold calibration reports.\nMar 3 – 4\nPhase 1 readiness benchmark\nA balanced 100-video benchmark with fixed seed. The system failed three of four quality gates (Section 9.1), which identified ingestion, not scoring, as the bottleneck.\nMar 5 – 11\nQueue v2, Oracle workers, and scale tests\nMoved heavy extraction to Oracle worker VMs behind a persistent queue, then ran batches of 251 and 780 links to test reliability.\nMar 13\nInstagram Phase 2\nWorker-backed browser ingest, authenticated media download, local Whisper ASR, and frame OCR. Evidence per video rose by two orders of magnitude.\nMar 16\nGated LLM comparison\nSide-by-side runs of heuristic-only versus OpenAI-assisted claim assessment to justify where the LLM should engage.\nMar 19\nMulti-platform stabilization"
   },
   {
-   "id": 43,
+   "id": 44,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "8. Build log: how it came together",
@@ -355,7 +363,7 @@
    "text": "TikTok pipeline, split worker lanes, duplicate-job reuse, persistent queue storage, an operations dashboard, and a runtime optimization pass.\nApr 20\nHealth-check bundle\nDiagnostics suite covering bytecode compilation, dependency checks, frontend syntax, and an isolated end-to-end queue workflow.\nMay 5 – 8\nDemo alignment and final release\nCompact score-first result UI, AI self-disclosure fixes, versioned results to avoid stale cache reuse, and the final\n@Chronicle presentation."
   },
   {
-   "id": 44,
+   "id": 45,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "9. Evaluation & results",
@@ -363,7 +371,7 @@
    "text": "9. Evaluation & results\nAll numbers below come from reproducible report files in the repository's reports/ directory. I report failures\nalongside successes, because the failures are what shaped the architecture."
   },
   {
-   "id": 45,
+   "id": 46,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "9.1 Phase 1 readiness gates",
@@ -371,7 +379,7 @@
    "text": "9.1 Phase 1 readiness gates\nBefore expanding beyond YouTube, I defined four pass/fail gates and ran a balanced, seeded benchmark of 100 videos\n(seed 20260303 ).\nGate Result Threshold Outcome\nIngestion success rate 46% ≥ 85% Fail\n\"Not enough evidence\" rate 97.8% ≤ 40% Fail\nScore standard deviation 4.10 ≥ 8.0 Fail\nQueue reliability 97% ≥ 95% Pass\nTable 3. Phase 1 readiness benchmark, March 4, 2026 (n = 100, balanced AI/human).\nThe pattern was diagnostic. The queue worked, but the system could not see enough of each video to say anything decisive,\nso scores clustered tightly around neutral. That result redirected effort away from scoring tweaks and toward ingestion:\nbrowser rendering, authenticated workers, OCR, and ASR."
   },
   {
-   "id": 46,
+   "id": 47,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "9.2 Reliability at scale",
@@ -379,7 +387,7 @@
    "text": "9.2 Reliability at scale\n780 / 780 YouTube links completed, 0 failures\n97.3% flagged as low evidence\n53.9 average score (neutral anchor is 52)\n19 median evidence tokens per video\nOn a 780-link YouTube batch, every job completed. Because YouTube's anti-bot friction left most videos with only about 19\ntokens of evidence, 754 of 780 scores landed below 55. This is the intended behavior: the system declined to make strong\nclaims it could not support, which directly answers RQ3."
   },
   {
-   "id": 47,
+   "id": 48,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "9.3 Instagram: before and after worker-backed ingestion",
@@ -387,7 +395,7 @@
    "text": "9.3 Instagram: before and after worker-backed ingestion\nMetric (19-link benchmark) Before After\nAverage evidence tokens 1.0 130.9\nMedian evidence tokens 1 95\nEvidence level (low / medium / high) 19 / 0 / 0 2 / 10 / 7\nAverage credibility score 52.63 69.97\nTable 4. Instagram Phase 2 benchmark, March 11 vs March 13, 2026.\nThe redesign answered RQ1 for Instagram. After authenticated media access was added, a single validation reel went from 85 to\n184 evidence tokens, its transcript grew from 49 to 746 characters, and speech recognition contributed 79 tokens where it had\ncontributed none."
   },
   {
-   "id": 48,
+   "id": 49,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "9.4 Gated LLM assistance",
@@ -395,7 +403,7 @@
    "text": "9.4 Gated LLM assistance\nOn a small three-video comparison, enabling gated OpenAI claim assessment raised average credibility by +6.33 points and\nevidence tokens by +6.5, mainly by resolving claims that heuristics had left as \"not enough evidence\". The sample is too small\nto generalize from, so I treated it as a directional signal to keep the LLM behind the evidence gate rather than as proof of accuracy."
   },
   {
-   "id": 49,
+   "id": 50,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "9.5 Runtime",
@@ -403,7 +411,7 @@
    "text": "9.5 Runtime\nRich Instagram analysis: 85.7 s → 61.6 s (−28%) after warm Chromium reuse and fast-mode cutoffs.\nTikTok worker probe (news clip): 33.9 s → 23.3 s (−31%).\nProduction snapshot (Mar 19): 184 completed and 8 failed jobs (95.8% completion), with 31 of 31 diagnostics passing."
   },
   {
-   "id": 50,
+   "id": 51,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "9.6 Generation-origin sanity check",
@@ -411,7 +419,7 @@
    "text": "9.6 Generation-origin sanity check\nOn a 39-video labeled validation sample (25 AI, 14 human), the generation-origin rule classified every video correctly.\nI report this cautiously: the sample is small and overlaps with the label sources used for calibration, so it confirms the\npipeline is wired correctly rather than demonstrating out-of-sample accuracy."
   },
   {
-   "id": 51,
+   "id": 52,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "9.7 Illustrative outputs",
@@ -419,7 +427,7 @@
    "text": "9.7 Illustrative outputs\nFigure 4. A TikTok clip presenting a bold space-program claim as fact scores 36/100 with high misinformation risk.\nFigure 5. Contrast between a well-evidenced clip (88.81) and a sparse, risk-heavy clip (34). Same scoring rules, different evidence."
   },
   {
-   "id": 52,
+   "id": 53,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "10.1 Evidence is the product",
@@ -427,7 +435,7 @@
    "text": "10.1 Evidence is the product\nThe single biggest lever on output quality was not the model; it was how much of the video the system could actually see.\nEvery major jump in usefulness (Instagram's 131x evidence increase, the move from flat to differentiated scores) came from\nbetter extraction. For anyone building trust tooling, ingestion deserves at least as much investment as inference."
   },
   {
-   "id": 53,
+   "id": 54,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "10.2 Honest uncertainty beats confident guessing",
@@ -435,7 +443,7 @@
    "text": "10.2 Honest uncertainty beats confident guessing\nA credibility tool that confidently mislabels a video does more harm than one that says \"I can't tell\". Anchoring low-evidence\nresults to a neutral 52 and surfacing evidence coverage next to every score made the system's limits visible to the user\ninstead of hiding them."
   },
   {
-   "id": 54,
+   "id": 55,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "10.3 LLMs as components, not oracles",
@@ -443,7 +451,7 @@
    "text": "10.3 LLMs as components, not oracles\nConstraining the LLM to structured claim assessment, gating it on evidence thresholds, and keeping the final score in code gave\nthe benefits of language reasoning without sacrificing reproducibility. It also controlled cost: the model is only called when\nthere is enough material for it to add value."
   },
   {
-   "id": 55,
+   "id": 56,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "10.4 Product lessons",
@@ -451,7 +459,7 @@
    "text": "10.4 Product lessons\nBenchmarks as decision gates. Pre-committing to pass/fail thresholds turned a disappointing result into a clear roadmap.\nArchitecture follows constraints. Free-tier memory limits forced the control/data plane split, which turned out to be the right design anyway.\nIsolate the slowest dependency. Giving YouTube its own lane protected the experience on the other two platforms.\nOperational visibility matters. The live dashboard made it possible to demo, debug, and explain the system to non-engineers."
   },
   {
-   "id": 56,
+   "id": 57,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "11. Limitations, threats to validity & ethics",
@@ -459,7 +467,7 @@
    "text": "11. Limitations, threats to validity & ethics\nPlatform access. YouTube remains the weakest path due to anti-bot and sign-in friction. Richer Instagram and TikTok extraction depends on authenticated worker sessions, which raises terms-of-service and sustainability questions for any production deployment.\nHand-set weights. The six-signal weights were chosen by design reasoning and iteration, not learned from a large labeled credibility dataset.\nSmall labeled samples. Several evaluations (LLM comparison, generation-origin check) use small samples and should be read as directional.\nCorpus coverage. Claim verification can only be as good as the trusted-source corpus it retrieves from.\nLanguage and modality. OCR and ASR work best on clear, English-language content. Visual deepfake detection is not yet performed directly on frames.\nCurated demo layer. A small override list keeps a handful of presentation examples consistent during live demos. Benchmark figures in Section 9 come from batch runs, not from that list.\nResponsible use\nCrediClip is a decision-support signal, not a verdict. A low score means \"look closer\", not \"this is false\". It is designed to help people and moderators prioritize attention, with the evidence visible so a human can make the final call."
   },
   {
-   "id": 57,
+   "id": 58,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "12. Applications",
@@ -467,7 +475,7 @@
    "text": "12. Applications\nModeration triage: surface suspect videos with evidence-backed reasoning so human reviewers start with the highest-risk queue.\nTrust-and-safety API: a credibility layer that platforms or brand-safety tools can call inside existing workflows.\nFact-checking support: faster screening of high-volume video so fact-checkers spend time where it matters.\nMedia literacy: transparent credibility framing that teaches end users what signals to look for."
   },
   {
-   "id": 58,
+   "id": 59,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "13. Future work",
@@ -475,7 +483,7 @@
    "text": "13. Future work\nFormal evaluation of the manipulation signal on FaceForensics++, DFDC, and ASVspoof [3] [4] [5] .\nVector retrieval (FAISS or pgvector) and a larger trusted corpus to raise claim-verification recall.\nLearned signal weights from a labeled credibility dataset, with calibration curves reported per platform.\nPostgres-backed analysis history, authentication, and role-based dashboards for moderators and researchers.\nLarger worker VMs to make local LLM inference viable and reduce dependence on hosted APIs.\nMultilingual OCR and ASR support."
   },
   {
-   "id": 59,
+   "id": 60,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "14. Conclusion",
@@ -483,7 +491,7 @@
    "text": "14. Conclusion\nCrediClip shows that a small team, or in this case a single product-minded builder, can ship a working, multi-platform\ncredibility system on free and low-cost infrastructure. On the three research questions: link-only evidence recovery is\nfeasible but platform-dependent (RQ1); a deterministic, six-signal score with visible evidence makes credibility explainable\nand reproducible (RQ2); and shrinking toward a neutral anchor under thin evidence is a simple, effective guard against false\nconfidence (RQ3).\nThe broader takeaway is a product one. In trust tooling, the most valuable thing a system can do is be honest about what it\nknows. Link in, evidence out, clearer trust signal.\nTry CrediClip live\nRead the code\nGet in touch"
   },
   {
-   "id": 60,
+   "id": 61,
    "page": "CrediClip write-up",
    "pageTitle": "CrediClip: Evidence-Aware Credibility Scoring for Short-Form Video · Ali Raza",
    "heading": "Tools & stack",
@@ -491,7 +499,7 @@
    "text": "Tools & stack\n@FastAPI Backend API, job orchestration, scoring\n@Fly.io Control-plane hosting with persistent volume\n@Oracle Cloud Always Free VMs for worker lanes\n@SQLite Durable job queue\n@Playwright Headless browser rendering\n@Tesseract OCR On-screen text extraction\n@faster-whisper Local speech recognition\n@yt-dlp Video metadata and media download\n@FFmpeg Frame sampling and audio extraction\n@OpenAI Gated claim assessment and transcription\n@Ollama Local LLM experiments (Qwen)\n@OpenRouter Optional free-tier LLM routing\n@AI or Not Optional synthetic-media API hook\n@Kaggle AI and human Shorts label sources\n@Chronicle Presentation deck\n@GitHub Source code and benchmark reports"
   },
   {
-   "id": 61,
+   "id": 62,
    "page": "Presentations",
    "pageTitle": "Presentations · Ali Raza",
    "heading": "",
@@ -499,7 +507,7 @@
    "text": "Home / Work / Presentations\nDecks & proposals · 2024–2026"
   },
   {
-   "id": 62,
+   "id": 63,
    "page": "Presentations",
    "pageTitle": "Presentations · Ali Raza",
    "heading": "Presentations",
@@ -507,7 +515,7 @@
    "text": "Presentations\nBrand pitches, launch strategy, and analytics, newest first. Each one opens into a summary with the full deck or live proposal.\n4 pieces · 3 decks · 1 live proposal"
   },
   {
-   "id": 63,
+   "id": 64,
    "page": "Presentations",
    "pageTitle": "Presentations · Ali Raza",
    "heading": "Deel Local XI: Turning Football Partnerships into Qualified B2B Meetings",
@@ -515,7 +523,7 @@
    "text": "Deel Local XI: Turning Football Partnerships into Qualified B2B Meetings\nAn independent growth proposal for Deel. Deel already has Arsenal on the world stage; this concept tests whether\none Bay Area community football club could connect that sporting energy with local employers who have a real\nDeel use case, measured in qualified meetings rather than impressions.\nDate\nOct 2026\nType\nIndependent growth proposal\nFocus\nBay Area B2B pipeline\nFormat\nInteractive one-page site\nGrowth Marketing\nB2B\nSports Partnerships\nAI-Assisted GTM\nExperiment Design\n6 weeks pilot with one community club partner\n50 fit-screened target businesses (illustrative)\n5–8 sales-accepted qualified meetings (illustrative target)\n$3K–$5K initial cash budget concept\nThe pilot\nWeek 1, Qualify: research suitable community clubs and permission-based ways to reach relevant businesses.\nWeeks 2–3, Design: with an approved club partner, plan a compact founders, HR, and operations event tied to a game or five-a-side tournament.\nWeeks 3–5, Activate: invite well-matched businesses, run targeted invitations and local social assets, and offer a Deel conversation only when relevant.\nWeek 6, Decide: judge meeting quality, economics, opt-in interest, and qualified pipeline, then repeat, change, or stop.\nMeasurement & guardrails\nNorth-star KPI: all-in cost per sales-accepted qualified meeting."
   },
   {
-   "id": 64,
+   "id": 65,
    "page": "Presentations",
    "pageTitle": "Presentations · Ali Raza",
    "heading": "Deel Local XI: Turning Football Partnerships into Qualified B2B Meetings",
@@ -523,7 +531,7 @@
    "text": "Where AI helps: find Deel-fit signals in public business data, score fit with human review before outreach, draft personalized creative, and report on qualified pipeline.\nGuardrails: opt-in communication, quality over quantity, no outreach to youth participants, and no sponsorship unless the economics and club terms work.\nClubs to explore: San Francisco Glens SC and San Francisco City FC, both with published sponsorship information. No agreement or contact is assumed.\nIndependent concept, not affiliated with or endorsed by Deel, Arsenal FC, SF Glens SC, or SF City FC. Scorecard figures are illustrative assumptions, not results.\nOpen the proposal\nSee the 49ers pitch"
   },
   {
-   "id": 65,
+   "id": 66,
    "page": "Presentations",
    "pageTitle": "Presentations · Ali Raza",
    "heading": "Analogic: Launching the AVA RF Plasma Generator Line",
@@ -531,7 +539,7 @@
    "text": "Analogic: Launching the AVA RF Plasma Generator Line\nA two-phase product marketing and go-to-market plan for Analogic's AVA line of pulsed RF plasma generators.\nPhase 1 built the product identity and launch kit for SEMICON West 2025. Phase 2 extended it into a\nwebsite, brand video, podcast, and digital content strategy for 2026.\nDate\nAug 2025 – May 2026\nRole\nProduct Management Intern\nTimeline\nAug 2025 – May 2026\nDeck\n38 slides · Fall 2025 & Spring 2026 strategy\nHardware GTM\nSemiconductor\nBrand Identity\nSEMICON West 2025\nWebsite UX\nCompetitive Analysis\n170+ booth demos conducted at SEMICON West 2025\n60+ requests for product info and follow-up calls\n20+ high-priority partnership and collaboration leads\n3 RF generators launched: AVA 1213, 3013, and 6013\nPhase 1 · SEMICON West launch (Fall 2025)\nProduct showcase: positioned the AVA 1213 (1.25 kW) and AVA 3013 (3 kW) 13.56 MHz pulsed RF generators with auto frequency tuning, alongside the AVA 6013.\nVisual identity: took the AVA logo from rough drafts to a final mark, then applied it across the product line.\nLaunch collateral: pop-up banners (plus a 1080×1920 digital version), a tri-fold brochure, datasheets, giveaways, and booth staging concepts.\nTimeline: ran design drafts in August, approvals and print in September, and event execution in October."
   },
   {
-   "id": 66,
+   "id": 67,
    "page": "Presentations",
    "pageTitle": "Presentations · Ali Raza",
    "heading": "Analogic: Launching the AVA RF Plasma Generator Line",
@@ -539,7 +547,7 @@
    "text": "LinkedIn plan: pre-event hype, event-day engagement, and post-event highlight videos to grow visibility and reach.\nCompetitor review: benchmarked trade-show and brand presence of Advanced Energy, MKS, and Comet.\nPhase 2 · Brand & digital (Spring 2026)\nAVA website: a five-stage roadmap from foundation to product pages, technical specs, support, and thought leadership, with wireframes and design principles.\nCompetitive web audit: reviewed sites from Rohde & Schwarz, XP Power, Comet, Advanced Energy, TRUMPF, and Applied Materials.\nContent engine: AVA brand video, podcast, product photo shoot, datasheet booklets, and an email newsletter.\nSocial strategy: brand intro and values, product highlights from AVA 1213 to 6013, and recurring series like \"AVA TLDR\" and \"AVA Insider\".\nWhat I learned: how engineering and sales shape a hardware GTM together, and how to build a full product identity from logo to messaging.\nUse the arrows to move through all 38 slides, or open the deck full screen.\nAVA website\nOpen deck in Canva\nWebsite code on GitHub\nSee Experience"
   },
   {
-   "id": 67,
+   "id": 68,
    "page": "Presentations",
    "pageTitle": "Presentations · Ali Raza",
    "heading": "MrBeast: Predicting YouTube Engagement from Metadata",
@@ -547,7 +555,7 @@
    "text": "MrBeast: Predicting YouTube Engagement from Metadata\nCan a creator predict engagement before uploading, using only things they control, such as title, length, and\ntiming? This BAN 612 project tested that question on MrBeast's channel with interpretable machine learning.\nDate\nFall 2025\nCourse\nBAN 612 · Cal State East Bay\nData\n250 uploads via YouTube Data API v3\nDeck\n11 slides\nPython\nYouTube Data API\nRandom Forest\nGradient Boosting\nSHAP\n250 MrBeast videos analyzed\n4 models compared with 5-fold cross-validation\n18–22h evening upload window that performed best\nMethod\nPipeline: API, cleaning, feature engineering, EDA, modeling, then SHAP interpretation.\nFeatures: duration in seconds, publish hour and weekday, a peak-hour flag (18–22h), a Shorts flag, and title length.\nEDA: views are heavy-tailed (so log-transformed), duration has a non-linear effect, and title length shows a small positive correlation.\nModels: linear and logistic regression baselines against random forest and gradient boosting, scored with R² and ROC-AUC.\nFindings\nPerformance: tree models modestly outperformed the linear baselines, and their bigger value was interpretability.\nTop SHAP drivers: duration, the Shorts flag, publish hour, the peak-hour flag, and title length.\nLocal example: a 45-second Short posted at 19:00 with a balanced title was predicted high-engagement."
   },
   {
-   "id": 68,
+   "id": 69,
    "page": "Presentations",
    "pageTitle": "Presentations · Ali Raza",
    "heading": "MrBeast: Predicting YouTube Engagement from Metadata",
@@ -555,7 +563,7 @@
    "text": "Recommendations: upload between 18 and 22h, run separate strategies for Shorts and long-form, and keep titles concise and keyword-rich.\nCode on GitHub\nOpen deck in Canva\nAll projects"
   },
   {
-   "id": 69,
+   "id": 70,
    "page": "Presentations",
    "pageTitle": "Presentations · Ali Raza",
    "heading": "San Francisco 49ers: Creative Content for a Global Faithful",
@@ -563,7 +571,7 @@
    "text": "San Francisco 49ers: Creative Content for a Global Faithful\nA pitch deck I created as a prospective intern, proposing new content ideas to help the 49ers reach fans beyond\nthe US. Each idea borrows a proven format from global soccer, cricket, and basketball and adapts it to the 49ers brand.\nDate\nLate 2024\nType\nProspective-intern pitch deck\nFocus\nInternational fan growth\nDeck\n11 slides\nBrand Strategy\nSports Marketing\nShort-Form Video\nGlobal Markets\nContent Ideation\n7 target growth markets, led by the UK and Mexico\n12+ content concepts adapted from global sports brands\n75,000+ Faithful at Levi's Stadium as a content anchor\nStrategy\nWhy now: the 49ers gained international marketing rights in Mexico and the UK in December 2021 through the NFL's Global Markets Program.\nWhere to grow: the UK, Mexico, Spain, India, Germany, Saudi Arabia, and the UAE.\nHow to win: culturally tailored content, such as soccer-flavored stories for UK fans and Arabic-language appeal for Gulf audiences.\nFormats: Reels and TikToks, drone POV, behind-the-scenes footage, player podcasts, and cultural music trends.\nContent concepts\nPlayers' Swag: arrival-fit content, inspired by France national team tunnel fashion.\nCoach's Game Plan: a look at Kyle Shanahan's tactics, modeled on Pep Guardiola's locker-room content.\nPlayer Carpool, Arabic commentary, and ASMR: formats proven by Arsenal FC and Cricket Australia."
   },
   {
-   "id": 70,
+   "id": 71,
    "page": "Presentations",
    "pageTitle": "Presentations · Ali Raza",
    "heading": "San Francisco 49ers: Creative Content for a Global Faithful",
@@ -571,7 +579,7 @@
    "text": "Cultural moments: heritage celebrations like Manchester United's Diwali freestyle video.\nInside training: an \"All or Nothing\"-style series to win over UK audiences.\nLevi's Stadium: tailgate and stadium-tour stories, including a Saudi-style desert tailgate idea.\nPitch deck prepared independently as a prospective intern; not an official 49ers campaign.\nOpen deck in Canva\nMore creative work"
   },
   {
-   "id": 71,
+   "id": 72,
    "page": "Contact",
    "pageTitle": "Ali Raza · Contact",
    "heading": "Contact",
@@ -579,7 +587,7 @@
    "text": "Contact\nLet's build something. Reach out anytime.\nBased in Hayward, SF Bay Area"
   },
   {
-   "id": 72,
+   "id": 73,
    "page": "Contact",
    "pageTitle": "Ali Raza · Contact",
    "heading": "Find me online",
@@ -587,7 +595,7 @@
    "text": "Find me online\nBook a call\n30 minutes on Calendly\nDownload CV\nAli-Raza-CV-2026.pdf\nLinkedIn (opens in new tab)\nlinkedin.com/in/ali-raza-2548880\nCopy\nGitHub (opens in new tab)\ngithub.com/aliraza2025\nCopy\nHugging Face (opens in new tab)\nhuggingface.co/axraza55\nCopy"
   },
   {
-   "id": 73,
+   "id": 74,
    "page": "About this site",
    "pageTitle": "About this site · Ali Raza",
    "heading": "About this site",
@@ -595,7 +603,7 @@
    "text": "About this site\nHow this portfolio is built, where its facts come from, and what it does with your data."
   },
   {
-   "id": 74,
+   "id": 75,
    "page": "About this site",
    "pageTitle": "About this site · Ali Raza",
    "heading": "Who writes it",
@@ -603,7 +611,7 @@
    "text": "Who writes it\nEverything here is written by me, Ali Raza. I build and maintain the site with AI coding assistants, mainly\nCursor. I review each change before it goes live, and every claim about my work is mine to stand behind."
   },
   {
-   "id": 75,
+   "id": 76,
    "page": "About this site",
    "pageTitle": "About this site · Ali Raza",
    "heading": "How I write about my work",
@@ -611,7 +619,7 @@
    "text": "How I write about my work\nNumbers come from a source I can point to: my CV, a project repository, an evaluation report, or the product itself. The Sources page lists them.\nBuilt, in progress, and planned are labeled differently. irha.ai, for example, is described as early access, not as a finished product.\nTeam work says what my part was. Each case study has a “My role” section.\nClient and customer data stays private. The Blue Ocean Window Cleaning tools are private repositories, so I publish engineering notes about them instead.\nMistakes get fixed in the open. If you spot one, tell me and the fix will show up in the changelog below."
   },
   {
-   "id": 76,
+   "id": 77,
    "page": "About this site",
    "pageTitle": "About this site · Ali Raza",
    "heading": "How it’s built",
@@ -619,39 +627,39 @@
    "text": "How it’s built\nHand-written HTML, CSS, and a small amount of JavaScript. No framework.\nHosted on Netlify. The source code is public on GitHub .\nSkip links, a keyboard-friendly menu, readable color contrast, and reduced animation when your device asks for it."
   },
   {
-   "id": 77,
+   "id": 78,
    "page": "About this site",
    "pageTitle": "About this site · Ali Raza",
    "heading": "The “Ask my AI” assistant",
    "url": "https://alirazaportfolio2026.netlify.app/about-this-site#assistant",
-   "text": "The “Ask my AI” assistant\nThe button in the corner opens an AI assistant. It is not me. It answers only from the pages listed on the\nSources page and my CV, puts a numbered link after each fact, and says so when this site\ndoesn’t cover something. It runs on free AI models through OpenRouter, so it can be slow, busy, or wrong. Check\nthe linked source before relying on an answer. The code is open source on\nGitHub ."
-  },
-  {
-   "id": 78,
-   "page": "About this site",
-   "pageTitle": "About this site · Ali Raza",
-   "heading": "Your data",
-   "url": "https://alirazaportfolio2026.netlify.app/about-this-site#data",
-   "text": "Your data\nNo analytics or advertising trackers.\nThe contact form sends your name, email, and message to my inbox through Web3Forms. I use them only to reply.\n“Book a call” opens Calendly, which has its own privacy policy.\nQuestions you ask the assistant go to a small server on Vercel and then to an AI model provider through OpenRouter. Free model providers may log or use prompts, so please don’t share private information there. I don’t store conversations; your browser keeps the current chat only until you close the tab.\nFonts load from Google Fonts, and Netlify, the host, keeps standard server logs."
+   "text": "The “Ask my AI” assistant\nThe button in the corner opens an AI assistant. It is not me. It answers only from the pages listed on the\nSources page and my CV, puts a numbered link after each fact, and says so when this site\ndoesn’t cover something. It runs on free AI models through OpenRouter, so it can be slow, busy, or wrong. Check\nthe linked source before relying on an answer. The code is open source on\nGitHub .\nOn the homepage, the same assistant appears as an illustrated avatar called Ali’s AI, drawn from my cartoon\nlikeness. You can type or use the microphone, and it can read answers aloud with your browser’s built-in voice.\nThe studio has settings to pause motion, turn off spoken answers, switch to a simple view, or hide the avatar."
   },
   {
    "id": 79,
    "page": "About this site",
    "pageTitle": "About this site · Ali Raza",
-   "heading": "What’s coming",
-   "url": "https://alirazaportfolio2026.netlify.app/about-this-site#planned",
-   "text": "What’s coming\nPlanned, not live yet\nA field notes section that brings my engineering notes onto this site.\nVoice questions and spoken answers for the assistant."
+   "heading": "Your data",
+   "url": "https://alirazaportfolio2026.netlify.app/about-this-site#data",
+   "text": "Your data\nNo analytics or advertising trackers.\nThe contact form sends your name, email, and message to my inbox through Web3Forms. I use them only to reply.\n“Book a call” opens Calendly, which has its own privacy policy.\nQuestions you ask the assistant go to a small server on Vercel and then to an AI model provider through OpenRouter. Free model providers may log or use prompts, so please don’t share private information there. I don’t store conversations; your browser keeps the current chat only until you close the tab.\nThe homepage microphone uses your browser’s speech recognition. In some browsers, such as Chrome, your voice is sent to the browser maker’s servers to be transcribed. Spoken answers use the voices installed in your browser or device. Your studio settings are saved only in your browser.\nFonts load from Google Fonts, and Netlify, the host, keeps standard server logs."
   },
   {
    "id": 80,
    "page": "About this site",
    "pageTitle": "About this site · Ali Raza",
-   "heading": "Changelog",
-   "url": "https://alirazaportfolio2026.netlify.app/about-this-site#changelog",
-   "text": "Changelog\nNov 3, 2026 Launched the “Ask my AI” assistant. Added Book a call, this page, and the Sources page.\nNov 2, 2026 Added irha.ai, where I’m co-founder leading product.\nOct 30, 2026 Added my Hugging Face profile. Accessibility pass: mobile menu, skip links, and button contrast.\nOct 29, 2026 Made the site easier for search engines to crawl: sitemap, robots.txt, and canonical tags.\nOct 26, 2026 Linked the Blue Ocean estimator engineering notes and the CrediClip data plane article.\nOct 22, 2026 Redesigned the Presentations page and added the Deel Local XI growth proposal.\nOct 16, 2026 Updated my CV for Fall 2026 and added the Presentations page.\nOct 7, 2026 Published the CrediClip research write-up.\nSep 11, 2026 Added the Creative portfolio section."
+   "heading": "What’s coming",
+   "url": "https://alirazaportfolio2026.netlify.app/about-this-site#planned",
+   "text": "What’s coming\nPlanned, not live yet\nA field notes section that brings my engineering notes onto this site."
   },
   {
    "id": 81,
+   "page": "About this site",
+   "pageTitle": "About this site · Ali Raza",
+   "heading": "Changelog",
+   "url": "https://alirazaportfolio2026.netlify.app/about-this-site#changelog",
+   "text": "Changelog\nNov 3, 2026 Launched the “Ask my AI” assistant and a new studio homepage with Ali’s AI, an avatar you can type or talk to. Added Book a call, this page, and the Sources page.\nNov 2, 2026 Added irha.ai, where I’m co-founder leading product.\nOct 30, 2026 Added my Hugging Face profile. Accessibility pass: mobile menu, skip links, and button contrast.\nOct 29, 2026 Made the site easier for search engines to crawl: sitemap, robots.txt, and canonical tags.\nOct 26, 2026 Linked the Blue Ocean estimator engineering notes and the CrediClip data plane article.\nOct 22, 2026 Redesigned the Presentations page and added the Deel Local XI growth proposal.\nOct 16, 2026 Updated my CV for Fall 2026 and added the Presentations page.\nOct 7, 2026 Published the CrediClip research write-up.\nSep 11, 2026 Added the Creative portfolio section."
+  },
+  {
+   "id": 82,
    "page": "About this site",
    "pageTitle": "About this site · Ali Raza",
    "heading": "Questions or corrections",
@@ -659,7 +667,7 @@
    "text": "Questions or corrections\nSources What backs each claim on this site\nContact Send a message or a correction\nBook a call 30 minutes on Calendly"
   },
   {
-   "id": 82,
+   "id": 83,
    "page": "Sources",
    "pageTitle": "Sources · Ali Raza",
    "heading": "Sources",
@@ -667,7 +675,7 @@
    "text": "Sources\nThe primary sources behind what this site says about my work. If a claim isn’t backed by one of these,\ntell me and I’ll fix it. About this site explains how I write and label claims."
   },
   {
-   "id": 83,
+   "id": 84,
    "page": "Sources",
    "pageTitle": "Sources · Ali Raza",
    "heading": "Profile and career",
@@ -675,7 +683,7 @@
    "text": "Profile and career\nCV (PDF) Roles, dates, education, and skills. The Experience page summarizes it.\nLinkedIn profile Work history and posts about my projects\nCal State East Bay My M.S. Business Analytics program\nGitHub profile All my public repositories\nHugging Face profile The CrediClip showcase Space"
   },
   {
-   "id": 84,
+   "id": 85,
    "page": "Sources",
    "pageTitle": "Sources · Ali Raza",
    "heading": "CrediClip",
@@ -683,7 +691,7 @@
    "text": "CrediClip\nMy M.S. capstone: credibility scoring for short-form video links.\nSource code Code, README, and evaluation details\nLive demo The working product\nResearch write-up Problem framing, architecture, scoring model, and evaluation\nEngineering notes Technical notes on how the system works\nData plane deep dive Workers, job queue, and recovery\nSlides (PDF) Capstone presentation\nHugging Face Space One-page summary with evaluation results\nLinkedIn post Launch post"
   },
   {
-   "id": 85,
+   "id": 86,
    "page": "Sources",
    "pageTitle": "Sources · Ali Raza",
    "heading": "irha.ai",
@@ -691,7 +699,7 @@
    "text": "irha.ai\nAI receptionist for service businesses, where I’m co-founder leading product. Early access.\nirha.ai Product, integrations, plans, and pricing\nLinkedIn company page Company updates"
   },
   {
-   "id": 86,
+   "id": 87,
    "page": "Sources",
    "pageTitle": "Sources · Ali Raza",
    "heading": "Blue Ocean Window Cleaning",
@@ -699,7 +707,7 @@
    "text": "Blue Ocean Window Cleaning\nThe estimate and reimbursement tools are private, and no customer data is published.\nEstimator engineering notes How the estimate tool’s data pipeline works"
   },
   {
-   "id": 87,
+   "id": 88,
    "page": "Sources",
    "pageTitle": "Sources · Ali Raza",
    "heading": "Other projects and presentations",
@@ -707,7 +715,7 @@
    "text": "Other projects and presentations\nProjects page My public repositories, with descriptions\nPresentations page Deel Local XI, Analogic, MrBeast, and San Francisco 49ers decks\nAVA RF Plasma Generator site Live product site for the Analogic launch project ( source )\nDeel Local XI proposal Growth proposal site\nMrBeast case study YouTube engagement analysis repository\nBurrito game analysis Logistics optimization and sensitivity study"
   },
   {
-   "id": 88,
+   "id": 89,
    "page": "Sources",
    "pageTitle": "Sources · Ali Raza",
    "heading": "Creative work",
@@ -715,7 +723,7 @@
    "text": "Creative work\nVideo portfolio Video work on Vimeo\nCreative blog Writing and creative projects"
   },
   {
-   "id": 89,
+   "id": 90,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "Ali Raza",
@@ -723,7 +731,7 @@
    "text": "Ali Raza\nHayward, CA | axraza55@gmail.com | linkedin.com/in/ali-raza-2548880 | github.com/aliraza2025 | alirazaportfolio2026.netlify.app"
   },
   {
-   "id": 90,
+   "id": 91,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "EDUCATION",
@@ -731,7 +739,7 @@
    "text": "EDUCATION\nCalifornia State University, East Bay | Master of Science in Business Analytics, expected Dec 2026 STEM-designated program with coursework in machine learning, deep learning, data mining, text mining, SQL/Python analytics, and data-driven decision making"
   },
   {
-   "id": 91,
+   "id": 92,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "SKILLS",
@@ -739,7 +747,7 @@
    "text": "SKILLS\nPRODUCT MANAGEMENT Product discovery, customer discovery, product strategy, product requirements, PRDs, roadmap planning, prioritization, success metrics, product lifecycle, experimentation, user feedback, launch planning, stakeholder alignment, cross-functional collaboration"
   },
   {
-   "id": 92,
+   "id": 93,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "DATA & ANALYTICS",
@@ -747,7 +755,7 @@
    "text": "DATA & ANALYTICS\nSQL, Python, Tableau, product analytics, user and market analysis, KPI and success metrics, funnel analysis, conversion analysis, A/B testing, data-driven decision making"
   },
   {
-   "id": 93,
+   "id": 94,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "TECHNICAL & AI",
@@ -755,7 +763,7 @@
    "text": "TECHNICAL & AI\nFastAPI, Next.js, SQLite, Fly.io, Playwright, AI-assisted prototyping, LLM workflows, prompt engineering, responsible AI evaluation, GitHub, Cursor, Codex, Claude Code"
   },
   {
-   "id": 94,
+   "id": 95,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "WORK EXPERIENCE",
@@ -763,7 +771,7 @@
    "text": "WORK EXPERIENCE\nBlue Ocean Window Cleaning | Business Operations Intern | San Diego, CA | Jun 2026 – Sep 2026\n- Gathered requirements directly from the owner and staff, translating business and user needs into product requirements for a Next.js quoting application using HouseCall Pro data.\n- Prioritized workflow improvements by balancing staff feedback, business impact, and implementation effort, carrying the highest-value changes through testing, iteration, production launch, and handoff.\n- Built data and optimization tools to guide pricing and operational decisions, including a staffing model that identified ~$3,400/month in potential slow-season savings."
   },
   {
-   "id": 95,
+   "id": 96,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "Analogic | Product Management Intern | Boston, MA | Aug 2025 – May 2026",
@@ -771,7 +779,7 @@
    "text": "Analogic | Product Management Intern | Boston, MA | Aug 2025 – May 2026\n- Partnered with engineering and sales to translate complex semiconductor product capabilities, technical constraints, and customer needs into clear use cases, positioning, and launch priorities.\n- Developed technical customer-facing assets for SEMICON West 2025, helping prospective buyers evaluate product value, constraints, and application fit."
   },
   {
-   "id": 96,
+   "id": 97,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "AtlasNova AI | Product Management Intern | Berkeley, CA | Feb 2025 – Jun 2025",
@@ -779,7 +787,7 @@
    "text": "AtlasNova AI | Product Management Intern | Berkeley, CA | Feb 2025 – Jun 2025\n- Conducted customer, market, and competitive research for an AI-native B2B platform, translating findings into product positioning and go-to-market decisions.\n- Partnered with product and engineering to synthesize customer feedback and market insights into clearer product priorities and launch materials."
   },
   {
-   "id": 97,
+   "id": 98,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "TECNO Mobile | Product Development Manager | Jun 2023 – Aug 2024",
@@ -787,7 +795,7 @@
    "text": "TECNO Mobile | Product Development Manager | Jun 2023 – Aug 2024\n- Analyzed user, engagement, and product performance data to identify opportunities, define KPI insights, and inform product and campaign decisions across cross-functional teams."
   },
   {
-   "id": 98,
+   "id": 99,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "Telenor | Digital Product Manager | Jan 2023 – Jun 2023",
@@ -795,7 +803,7 @@
    "text": "Telenor | Digital Product Manager | Jan 2023 – Jun 2023\n- Analyzed KPI, funnel, and performance data to identify conversion gaps and inform product and channel prioritization decisions."
   },
   {
-   "id": 99,
+   "id": 100,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "Garena Free Fire | Product Associate | Jan 2022 – Dec 2022",
@@ -803,7 +811,7 @@
    "text": "Garena Free Fire | Product Associate | Jan 2022 – Dec 2022\n- Analyzed community, user, and campaign data to identify audience insights and inform content and product decisions, reaching 118M users and generating 18M engagements."
   },
   {
-   "id": 100,
+   "id": 101,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "OPPO Mobile | Product Associate | Jan 2020 – Jan 2022",
@@ -811,7 +819,7 @@
    "text": "OPPO Mobile | Product Associate | Jan 2020 – Jan 2022\n- Translated product launch goals into creator and cross-platform execution strategies, generating 60M+ impressions and 1.5M+ engagements."
   },
   {
-   "id": 101,
+   "id": 102,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "PROJECTS",
