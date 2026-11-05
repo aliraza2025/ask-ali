@@ -144,7 +144,7 @@ for (const item of catalog) {
 
 // Plain-text sources (e.g. the CV, extracted from its PDF) split on blank lines.
 const TEXT_SOURCES = [
-  { file: "sources/cv.txt", page: "CV", url: `${siteUrl}/assets/Ali-Raza-CV.pdf` },
+  { file: "sources/cv.txt", page: "CV", url: `${siteUrl}/experience` },
 ];
 for (const src of TEXT_SOURCES) {
   const blocks = readFileSync(join(root, src.file), "utf8").split(/\n\s*\n/).map((b) => b.trim()).filter(Boolean);
