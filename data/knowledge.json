@@ -1,6 +1,6 @@
 {
  "site": "https://alirazaai.page",
- "builtAt": "2026-11-04T23:12:03.931Z",
+ "builtAt": "2026-11-05T21:05:35.275Z",
  "chunks": [
   {
    "id": 0,
@@ -600,7 +600,7 @@
    "pageTitle": "Ali Raza · Contact",
    "heading": "Find me online",
    "url": "https://alirazaai.page/contact#social-heading",
-   "text": "Find me online\nBook a call\n30 minutes on Calendly\nDownload CV\nAli-Raza-CV-2026.pdf\nLinkedIn (opens in new tab)\nlinkedin.com/in/ali-raza-2548880\nCopy\nGitHub (opens in new tab)\ngithub.com/aliraza2025\nCopy\nHugging Face (opens in new tab)\nhuggingface.co/axraza55\nCopy"
+   "text": "Find me online\nBook a call\n30 minutes on Calendly\nDownload CV\nAli-Raza-CV.pdf\nLinkedIn (opens in new tab)\nlinkedin.com/in/ali-raza-2548880\nCopy\nGitHub (opens in new tab)\ngithub.com/aliraza2025\nCopy\nHugging Face (opens in new tab)\nhuggingface.co/axraza55\nCopy"
   },
   {
    "id": 75,
@@ -1143,7 +1143,7 @@
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "Ali Raza",
-   "url": "https://alirazaai.page/assets/Ali-Raza-CV-2026.pdf",
+   "url": "https://alirazaai.page/assets/Ali-Raza-CV.pdf",
    "text": "Ali Raza\nHayward, CA | axraza55@gmail.com | linkedin.com/in/ali-raza-2548880 | github.com/aliraza2025 | alirazaportfolio2026.netlify.app"
   },
   {
@@ -1151,7 +1151,7 @@
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "EDUCATION",
-   "url": "https://alirazaai.page/assets/Ali-Raza-CV-2026.pdf",
+   "url": "https://alirazaai.page/assets/Ali-Raza-CV.pdf",
    "text": "EDUCATION\nCalifornia State University, East Bay | Master of Science in Business Analytics, expected Dec 2026 STEM-designated program with coursework in machine learning, deep learning, data mining, text mining, SQL/Python analytics, and data-driven decision making"
   },
   {
@@ -1159,7 +1159,7 @@
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "SKILLS",
-   "url": "https://alirazaai.page/assets/Ali-Raza-CV-2026.pdf",
+   "url": "https://alirazaai.page/assets/Ali-Raza-CV.pdf",
    "text": "SKILLS\nPRODUCT MANAGEMENT Product discovery, customer discovery, product strategy, product requirements, PRDs, roadmap planning, prioritization, success metrics, product lifecycle, experimentation, user feedback, launch planning, stakeholder alignment, cross-functional collaboration"
   },
   {
@@ -1167,7 +1167,7 @@
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "DATA & ANALYTICS",
-   "url": "https://alirazaai.page/assets/Ali-Raza-CV-2026.pdf",
+   "url": "https://alirazaai.page/assets/Ali-Raza-CV.pdf",
    "text": "DATA & ANALYTICS\nSQL, Python, Tableau, product analytics, user and market analysis, KPI and success metrics, funnel analysis, conversion analysis, A/B testing, data-driven decision making"
   },
   {
@@ -1175,7 +1175,7 @@
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "TECHNICAL & AI",
-   "url": "https://alirazaai.page/assets/Ali-Raza-CV-2026.pdf",
+   "url": "https://alirazaai.page/assets/Ali-Raza-CV.pdf",
    "text": "TECHNICAL & AI\nFastAPI, Next.js, SQLite, Fly.io, Playwright, AI-assisted prototyping, LLM workflows, prompt engineering, responsible AI evaluation, GitHub, Cursor, Codex, Claude Code"
   },
   {
@@ -1183,7 +1183,7 @@
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "WORK EXPERIENCE",
-   "url": "https://alirazaai.page/assets/Ali-Raza-CV-2026.pdf",
+   "url": "https://alirazaai.page/assets/Ali-Raza-CV.pdf",
    "text": "WORK EXPERIENCE\nBlue Ocean Window Cleaning | Business Operations Intern | San Diego, CA | Jun 2026 – Sep 2026\n- Gathered requirements directly from the owner and staff, translating business and user needs into product requirements for a Next.js quoting application using HouseCall Pro data.\n- Prioritized workflow improvements by balancing staff feedback, business impact, and implementation effort, carrying the highest-value changes through testing, iteration, production launch, and handoff.\n- Built data and optimization tools to guide pricing and operational decisions, including a staffing model that identified ~$3,400/month in potential slow-season savings."
   },
   {
@@ -1191,7 +1191,7 @@
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "Analogic | Product Management Intern | Boston, MA | Aug 2025 – May 2026",
-   "url": "https://alirazaai.page/assets/Ali-Raza-CV-2026.pdf",
+   "url": "https://alirazaai.page/assets/Ali-Raza-CV.pdf",
    "text": "Analogic | Product Management Intern | Boston, MA | Aug 2025 – May 2026\n- Partnered with engineering and sales to translate complex semiconductor product capabilities, technical constraints, and customer needs into clear use cases, positioning, and launch priorities.\n- Developed technical customer-facing assets for SEMICON West 2025, helping prospective buyers evaluate product value, constraints, and application fit."
   },
   {
@@ -1199,7 +1199,7 @@
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "AtlasNova AI | Product Management Intern | Berkeley, CA | Feb 2025 – Jun 2025",
-   "url": "https://alirazaai.page/assets/Ali-Raza-CV-2026.pdf",
+   "url": "https://alirazaai.page/assets/Ali-Raza-CV.pdf",
    "text": "AtlasNova AI | Product Management Intern | Berkeley, CA | Feb 2025 – Jun 2025\n- Conducted customer, market, and competitive research for an AI-native B2B platform, translating findings into product positioning and go-to-market decisions.\n- Partnered with product and engineering to synthesize customer feedback and market insights into clearer product priorities and launch materials."
   },
   {
@@ -1207,7 +1207,7 @@
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "TECNO Mobile | Product Development Manager | Jun 2023 – Aug 2024",
-   "url": "https://alirazaai.page/assets/Ali-Raza-CV-2026.pdf",
+   "url": "https://alirazaai.page/assets/Ali-Raza-CV.pdf",
    "text": "TECNO Mobile | Product Development Manager | Jun 2023 – Aug 2024\n- Analyzed user, engagement, and product performance data to identify opportunities, define KPI insights, and inform product and campaign decisions across cross-functional teams."
   },
   {
@@ -1215,7 +1215,7 @@
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "Telenor | Digital Product Manager | Jan 2023 – Jun 2023",
-   "url": "https://alirazaai.page/assets/Ali-Raza-CV-2026.pdf",
+   "url": "https://alirazaai.page/assets/Ali-Raza-CV.pdf",
    "text": "Telenor | Digital Product Manager | Jan 2023 – Jun 2023\n- Analyzed KPI, funnel, and performance data to identify conversion gaps and inform product and channel prioritization decisions."
   },
   {
@@ -1223,7 +1223,7 @@
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "Garena Free Fire | Product Associate | Jan 2022 – Dec 2022",
-   "url": "https://alirazaai.page/assets/Ali-Raza-CV-2026.pdf",
+   "url": "https://alirazaai.page/assets/Ali-Raza-CV.pdf",
    "text": "Garena Free Fire | Product Associate | Jan 2022 – Dec 2022\n- Analyzed community, user, and campaign data to identify audience insights and inform content and product decisions, reaching 118M users and generating 18M engagements."
   },
   {
@@ -1231,7 +1231,7 @@
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "OPPO Mobile | Product Associate | Jan 2020 – Jan 2022",
-   "url": "https://alirazaai.page/assets/Ali-Raza-CV-2026.pdf",
+   "url": "https://alirazaai.page/assets/Ali-Raza-CV.pdf",
    "text": "OPPO Mobile | Product Associate | Jan 2020 – Jan 2022\n- Translated product launch goals into creator and cross-platform execution strategies, generating 60M+ impressions and 1.5M+ engagements."
   },
   {
@@ -1239,7 +1239,7 @@
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "PROJECTS",
-   "url": "https://alirazaai.page/assets/Ali-Raza-CV-2026.pdf",
+   "url": "https://alirazaai.page/assets/Ali-Raza-CV.pdf",
    "text": "PROJECTS\nCrediClip, AI Credibility Analysis MVP, Product Owner & Builder\n- Identified a user problem around evaluating the credibility of short-form video and defined the product workflow, requirements, and success criteria for an AI credibility product across TikTok, Instagram, and YouTube Shorts.\n- Designed and shipped the product using FastAPI, OCR/ASR extraction, queue-backed processing, SQLite, Playwright, and selective LLM-based claim assessment.\n- Developed evidence-aware scoring and uncertainty handling to turn noisy inputs into credibility scores, risk flags, evidence coverage, and claim-level explanations, iterating on output quality and reliability.\n- Owned the product end to end from problem definition and workflow design through prototyping, testing, debugging, deployment, and iteration."
   }
  ]

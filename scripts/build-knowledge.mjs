@@ -136,7 +136,7 @@ for (const page of PAGES) {
 
 // Plain-text sources (e.g. the CV, extracted from its PDF) split on blank lines.
 const TEXT_SOURCES = [
-  { file: "sources/cv.txt", page: "CV", url: `${siteUrl}/assets/Ali-Raza-CV-2026.pdf` },
+  { file: "sources/cv.txt", page: "CV", url: `${siteUrl}/assets/Ali-Raza-CV.pdf` },
 ];
 for (const src of TEXT_SOURCES) {
   const blocks = readFileSync(join(root, src.file), "utf8").split(/\n\s*\n/).map((b) => b.trim()).filter(Boolean);
