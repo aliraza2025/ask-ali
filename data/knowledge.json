@@ -1,6 +1,6 @@
 {
  "site": "https://alirazaai.page",
- "builtAt": "2026-11-05T21:05:35.275Z",
+ "builtAt": "2026-11-05T22:21:09.502Z",
  "chunks": [
   {
    "id": 0,
@@ -728,10 +728,18 @@
    "pageTitle": "Field notes · Ali Raza",
    "heading": "How the things I build work",
    "url": "https://alirazaai.page/notes/",
-   "text": "How the things I build work\nEngineering and product notes from my projects: the architecture decisions, the numbers behind them, and what those numbers don’t prove.\nBlue Ocean Window Cleaning · Engineering note"
+   "text": "How the things I build work\nEngineering and product notes from my projects: the architecture decisions, the numbers behind them, and what those numbers don’t prove.\nRaasta · Product experiment"
   },
   {
    "id": 91,
+   "page": "Field notes",
+   "pageTitle": "Field notes · Ali Raza",
+   "heading": "Turning a working intake flow into a measurable product decision",
+   "url": "https://alirazaai.page/notes/",
+   "text": "Turning a working intake flow into a measurable product decision\nTwo usable intake variants, a defined metric, privacy-scoped events, real SDK verification, and explicit limits on what the evidence proves.\nNovember 5, 2026 · Independent prototype\nBlue Ocean Window Cleaning · Engineering note"
+  },
+  {
+   "id": 92,
    "page": "Field notes",
    "pageTitle": "Field notes · Ali Raza",
    "heading": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote",
@@ -739,7 +747,7 @@
    "text": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote\nHow I turned 11,000+ Housecall Pro jobs, San Diego parcel records, and a small set of tracked jobs into an explainable pricing engine that office staff can use on a live call.\nOctober 26, 2026 · 11 min read\nCrediClip · AI product evaluation"
   },
   {
-   "id": 92,
+   "id": 93,
    "page": "Field notes",
    "pageTitle": "Field notes · Ali Raza",
    "heading": "What 780 completed video jobs taught me about AI product quality",
@@ -747,7 +755,7 @@
    "text": "What 780 completed video jobs taught me about AI product quality\nHow evidence coverage, readiness benchmarks, and explicit uncertainty shaped the CrediClip roadmap.\nOctober 26, 2026 · 6 min read\nCrediClip · Capstone engineering note"
   },
   {
-   "id": 93,
+   "id": 94,
    "page": "Field notes",
    "pageTitle": "Field notes · Ali Raza",
    "heading": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis",
@@ -755,7 +763,7 @@
    "text": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis\nHow I separated CrediClip's web control plane from platform-specific evidence workers to analyze YouTube Shorts, Instagram Reels, and TikTok videos reliably.\nOctober 14, 2026 · 10 min read"
   },
   {
-   "id": 94,
+   "id": 95,
    "page": "Field note: CrediClip data plane",
    "pageTitle": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis · Field notes · Ali Raza",
    "heading": "",
@@ -763,7 +771,7 @@
    "text": "Home / Notes / CrediClip\nCapstone engineering note · CrediClip"
   },
   {
-   "id": 95,
+   "id": 96,
    "page": "Field note: CrediClip data plane",
    "pageTitle": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis · Field notes · Ali Raza",
    "heading": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis",
@@ -771,7 +779,7 @@
    "text": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis\nHow I separated CrediClip's web control plane from platform-specific evidence workers to analyze YouTube Shorts, Instagram Reels, and TikTok videos reliably.\nAuthor\nAli Raza\nPublished\nOctober 14, 2026\nReading time\n10 min read\nPython\nFastAPI\nSystem Architecture\nAI\nOn this page\nShort-form video looks simple from the outside: paste a link, wait briefly, and receive a credibility score. The engineering behind that interaction is less simple. YouTube Shorts, Instagram Reels, and TikTok expose different metadata, apply different anti-bot controls, and fail in different ways. A single request handler that tries to download media, transcribe audio, scan frames, retrieve evidence, and score a claim quickly becomes slow and fragile.\nI encountered this problem while building CrediClip , my capstone project for credibility analysis of short-form video. The most important architectural decision was to separate the system into two parts:\na control plane that accepts links, stores job state, exposes status APIs, and returns results;\na data plane made of background workers that perform platform-specific evidence extraction and analysis."
   },
   {
-   "id": 96,
+   "id": 97,
    "page": "Field note: CrediClip data plane",
    "pageTitle": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis · Field notes · Ali Raza",
    "heading": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis",
@@ -779,7 +787,7 @@
    "text": "Within the data plane, I introduced worker lanes . Each lane can accept or reject jobs by platform, allowing expensive or unreliable workloads to be isolated without duplicating the entire application.\nThis article explains why the architecture was necessary, how it works, and what I learned from implementing it.\nThe code excerpts below are shortened from the working project for readability. The complete implementation is available in the CrediClip repository ."
   },
   {
-   "id": 97,
+   "id": 98,
    "page": "Field note: CrediClip data plane",
    "pageTitle": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis · Field notes · Ali Raza",
    "heading": "The problem with a single synchronous pipeline",
@@ -787,7 +795,7 @@
    "text": "The problem with a single synchronous pipeline\nThe first version of the application followed a straightforward flow:\nbrowser request\n-> fetch platform page\n-> extract caption and transcript\n-> run OCR or speech transcription\n-> analyze credibility\n-> return response\nThat design works for a controlled demo, but it creates several production problems.\nFirst, evidence extraction is much slower than ordinary web processing. A video may require browser rendering, media download, frame sampling, OCR, or automatic speech recognition. Holding an HTTP request open during all of those stages makes timeouts much more likely.\nSecond, the platforms do not behave alike. Instagram may expose useful rendered metadata while withholding the media file. TikTok may require a browser session or cookies. YouTube may return captions successfully for one video and produce an anti-bot challenge for the next. Treating those workloads as identical means one platform’s failure mode can consume all available capacity.\nThird, the workload is resource-heavy. Browser processes, media decoding, OCR, and transcription compete for memory and CPU. Running them inside the public web process risks slowing every visitor or terminating the process entirely.\nThe solution was not simply “add more servers.” The system needed a clear boundary between coordinating work and performing work."
   },
   {
-   "id": 98,
+   "id": 99,
    "page": "Field note: CrediClip data plane",
    "pageTitle": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis · Field notes · Ali Raza",
    "heading": "Control plane versus data plane",
@@ -795,7 +803,7 @@
    "text": "Control plane versus data plane\nThe control plane is intentionally lightweight. It performs four main tasks:\nnormalize and validate submitted URLs;\ncreate or reuse jobs in a persistent queue;\nallow workers to claim and update jobs;\nlet the client poll one job until it completes or fails.\nThe data plane performs the expensive operations:\nidentify the source platform;\nretrieve captions, transcripts, metadata, and media where available;\nrun browser-assisted extraction, OCR, frame scanning, or speech transcription;\ncalculate evidence coverage and credibility signals;\nsend artifacts or a completed result back to the control plane.\nThe resulting flow is:\nUser\n|\nv\nFastAPI control plane\n|\n+--> SQLite job queue\n|\n+--> Instagram/TikTok lane A\n+--> Instagram/TikTok lane B\n+--> YouTube Shorts lane\n|\nv\ncaptions + ASR + OCR + metadata\n|\nv\ncredibility result\n|\nv\nSQLite job record\nThis separation provides two useful guarantees. The public API remains responsive even when extraction is slow, and a failing platform can be isolated to its own worker lane."
   },
   {
-   "id": 99,
+   "id": 100,
    "page": "Field note: CrediClip data plane",
    "pageTitle": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis · Field notes · Ali Raza",
    "heading": "Step 1: represent analysis as a durable job",
@@ -803,7 +811,7 @@
    "text": "Step 1: represent analysis as a durable job\nWhen the frontend submits a video URL, the API does not immediately perform rich extraction. It creates or reuses a queue job:\n@ app . post ( \"/api/jobs\" , response_model = JobResponse )\ndef create_analysis_job ( request : JobCreateRequest ) -> JobResponse :\nnormalized_url , _ = normalize_input_url ( str ( request . url ))\njob = create_or_reuse_job ( normalized_url )\nreturn JobResponse ( ** job )\nThe job record stores a small state machine:\nqueued -> processing -> completed\n\\-> failed\nFor the MVP, I used SQLite rather than introducing a separate queue product. That was a deliberate tradeoff. The project needed durable state, atomic claiming, simple backup, and low operating cost more than it needed distributed throughput.\nThe table stores the URL, status, worker identity, extracted caption and transcript, diagnostic notes, result JSON, error information, and timestamps. This makes the queue useful not only for scheduling but also for observability.\nThe API also reuses an active or recently completed job for the same URL. That prevents repeated clicks from creating duplicate browser and transcription work. A result-version marker ensures that stale results are not reused after scoring logic changes."
   },
   {
-   "id": 100,
+   "id": 101,
    "page": "Field note: CrediClip data plane",
    "pageTitle": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis · Field notes · Ali Raza",
    "heading": "Step 2: claim jobs atomically",
@@ -811,7 +819,7 @@
    "text": "Step 2: claim jobs atomically\nMultiple workers poll the same API. If two workers read the same queued record at the same time, they could both analyze it. To prevent that, the claim operation starts an immediate SQLite transaction, selects an eligible job, and changes its status before releasing the lock.\ndef claim_next_job ( worker_id , include_platforms = None , exclude_platforms = None ):\nrecover_stale_jobs ()\ninclude = set ( include_platforms or [])\nexclude = set ( exclude_platforms or [])\nwith _connect () as conn :\nconn . execute ( \"BEGIN IMMEDIATE\" )\nrows = conn . execute (\n\"\"\"\nSELECT * FROM jobs\nWHERE status = 'queued'\nORDER BY created_at ASC\nLIMIT 200\n\"\"\"\n). fetchall ()\nselected = None\nfor candidate in rows :\nplatform = _job_platform ( candidate [ \"url\" ])\nif include and platform not in include :\ncontinue\nif exclude and platform in exclude :\ncontinue\nselected = candidate\nbreak\nif selected is None :\nreturn None\nconn . execute (\n\"\"\"\nUPDATE jobs\nSET status = 'processing', worker_id = ?, updated_at = ?\nWHERE id = ?\n\"\"\" ,\n( worker_id , _now_iso (), selected [ \"id\" ]),\n)\nconn . commit ()\nreturn get_job ( selected [ \"id\" ])\nBEGIN IMMEDIATE is important here. It serializes competing writers during the short claim operation. This is enough for the scale of the MVP and avoids adding Redis or a message broker solely for locking."
   },
   {
-   "id": 101,
+   "id": 102,
    "page": "Field note: CrediClip data plane",
    "pageTitle": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis · Field notes · Ali Raza",
    "heading": "Step 3: create lanes with routing filters",
@@ -819,7 +827,7 @@
    "text": "Step 3: create lanes with routing filters\nA lane is not a separate codebase. It is the same worker started with a different routing policy.\nparser . add_argument ( \"--include-platforms\" , default = \"\" )\nparser . add_argument ( \"--exclude-platforms\" , default = \"\" )\npayload = { \"worker_id\" : worker_id }\nif include_platforms :\npayload [ \"include_platforms\" ] = include_platforms\nif exclude_platforms :\npayload [ \"exclude_platforms\" ] = exclude_platforms\nresponse = client . post ( f \" { api_base } /api/jobs/claim\" , json = payload )\njob = response . json (). get ( \"job\" )\nThe deployed topology used two general lanes for Instagram and TikTok and one dedicated YouTube Shorts lane:\n# General evidence lane\npython scripts/queue_worker.py \\\n--worker-id oracle-worker-1 \\\n--exclude-platforms youtube_shorts \\\n--ingest-mode rich\n# Dedicated YouTube lane\npython scripts/queue_worker.py \\\n--worker-id oracle-worker-youtube \\\n--include-platforms youtube_shorts \\\n--ingest-mode rich\nYouTube was separated because its anti-bot and authentication behavior differed from Instagram and TikTok. If YouTube extraction stalled, it could no longer occupy every worker. The general lanes remained available for the other platforms."
   },
   {
-   "id": 102,
+   "id": 103,
    "page": "Field note: CrediClip data plane",
    "pageTitle": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis · Field notes · Ali Raza",
    "heading": "Step 3: create lanes with routing filters",
@@ -827,7 +835,7 @@
    "text": "The same mechanism can support future policies without rewriting the queue: a high-priority lane, a GPU-backed transcription lane, or a lane restricted to jobs that already contain transcripts."
   },
   {
-   "id": 103,
+   "id": 104,
    "page": "Field note: CrediClip data plane",
    "pageTitle": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis · Field notes · Ali Raza",
    "heading": "Step 4: use one interface with platform-specific adapters",
@@ -835,7 +843,7 @@
    "text": "Step 4: use one interface with platform-specific adapters\nOnce a worker claims a job, it selects the correct ingestion adapter. Each adapter returns the same logical output: caption, transcript, notes, and structured evidence coverage.\nasync def ingest ( url : str , worker_mode : bool ):\nnormalized_url , _ = normalize_input_url ( url )\nplatform = infer_platform ( normalized_url )\nif platform == \"youtube_shorts\" :\nreturn await enrich_from_youtube (\nnormalized_url ,\nworker_mode = worker_mode ,\ninclude_evidence = True ,\n)\nif platform == \"instagram\" :\nreturn await enrich_from_instagram (\nnormalized_url ,\nworker_mode = worker_mode ,\ninclude_evidence = True ,\n)\nif platform == \"tiktok\" :\nreturn await enrich_from_tiktok (\nnormalized_url ,\nworker_mode = worker_mode ,\ninclude_evidence = True ,\n)\nreturn \"\" , \"\" , [ \"Unsupported platform\" ], {}\nThis adapter boundary matters because the downstream scoring pipeline should not need to know how evidence was collected. It consumes normalized text and evidence metadata regardless of whether the source was a page description, subtitle track, OCR frame, or ASR transcript."
   },
   {
-   "id": 104,
+   "id": 105,
    "page": "Field note: CrediClip data plane",
    "pageTitle": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis · Field notes · Ali Raza",
    "heading": "Step 4: use one interface with platform-specific adapters",
@@ -843,7 +851,7 @@
    "text": "The evidence object also records coverage signals such as caption tokens, transcript tokens, OCR tokens, ASR tokens, and an overall evidence level. That information affects uncertainty and prevents a sparse extraction from being presented with the same confidence as a high-coverage analysis."
   },
   {
-   "id": 105,
+   "id": 106,
    "page": "Field note: CrediClip data plane",
    "pageTitle": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis · Field notes · Ali Raza",
    "heading": "Step 5: decide where analysis runs",
@@ -851,7 +859,7 @@
    "text": "Step 5: decide where analysis runs\nThe worker supports two modes:\nlocal analysis : extract evidence and run the complete scoring pipeline on the worker;\nserver analysis : extract evidence on the worker, then send artifacts to the API for scoring.\nif analysis_mode == \"local\" :\nresult = await analyze_video (\nAnalyzeRequest (\nurl = url ,\ncaption = caption ,\ntranscript = transcript ,\ningest_evidence = ingest_evidence ,\n)\n)\npost_complete_result ( job_id , caption , transcript , result )\nelse :\npost_artifacts ( job_id , caption , transcript , ingest_evidence )\nThis switch made deployment more flexible. A small web host could remain lightweight while a VM performed rich ingestion and scoring. Alternatively, the worker could upload artifacts to a stronger analysis server. The queue contract stayed the same in both cases."
   },
   {
-   "id": 106,
+   "id": 107,
    "page": "Field note: CrediClip data plane",
    "pageTitle": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis · Field notes · Ali Raza",
    "heading": "Step 6: design for failure, not only success",
@@ -859,7 +867,7 @@
    "text": "Step 6: design for failure, not only success\nBackground processing creates a specific reliability problem: a worker can claim a job and then disappear. Without recovery, that job remains in processing forever.\nCrediClip periodically checks processing jobs and requeues any that have exceeded a configurable stale threshold:\ndef recover_stale_jobs ():\nnow = datetime . now ( timezone . utc )\nrecovered = []\nwith _connect () as conn :\nrows = conn . execute (\n\"SELECT id, updated_at FROM jobs WHERE status = 'processing'\"\n). fetchall ()\nfor row in rows :\nage = now - datetime . fromisoformat ( row [ \"updated_at\" ])\nif age . total_seconds () >= PROCESSING_STALE_SEC :\nrecovered . append ( row [ \"id\" ])\nfor job_id in recovered :\nconn . execute (\n\"\"\"\nUPDATE jobs\nSET status = 'queued', worker_id = NULL, updated_at = ?\nWHERE id = ?\n\"\"\" ,\n( _now_iso (), job_id ),\n)\nconn . commit ()\nTimeouts are handled at the ingestion and analysis boundaries, and failures are written back to the job record. The frontend can therefore distinguish “still working” from “failed,” and operators can inspect the reason instead of searching through only terminal logs."
   },
   {
-   "id": 107,
+   "id": 108,
    "page": "Field note: CrediClip data plane",
    "pageTitle": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis · Field notes · Ali Raza",
    "heading": "What the lane model improved",
@@ -867,7 +875,7 @@
    "text": "What the lane model improved\nThe lane architecture improved the project in four practical ways.\nIsolation. YouTube-specific failures no longer consumed all worker capacity.\nResponsiveness. The web layer handled short API operations while media processing happened elsewhere.\nObservability. Every job recorded its state, assigned worker, evidence volume, notes, result, and error.\nCost control. The MVP could use SQLite and small worker VMs instead of a managed queue, distributed database, or large always-on server.\nIt also made the system easier to explain. The score was no longer the output of a single opaque model call. It was the final stage of an observable pipeline that collected evidence, measured coverage, assessed signals, and recorded uncertainty."
   },
   {
-   "id": 108,
+   "id": 109,
    "page": "Field note: CrediClip data plane",
    "pageTitle": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis · Field notes · Ali Raza",
    "heading": "Scoring, confidence, and evaluation",
@@ -875,7 +883,7 @@
    "text": "Scoring, confidence, and evaluation\nThe final score is computed in deterministic application code. LLMs can provide structured claim assessments when evidence thresholds are met. Low analysis confidence shrinks scores toward a neutral anchor of 52, while evidence coverage describes the recovered inputs. That behavior is a design choice, not an independently validated probability.\nIn the March 11, 2026 YouTube batch, all 780 jobs eventually completed, including two retried links, but 759 results (97.3%) were low evidence. In a separate 19-link Instagram comparison between March 11 and March 13, mean evidence tokens rose from 1.0 to 130.9. These measurements describe completion and evidence recovery. They do not establish credibility accuracy.\nThe evaluation article links the underlying reports and distinguishes these measurements from independently labeled assessment quality. Stronger labeled evaluation and confidence calibration remain necessary."
   },
   {
-   "id": 109,
+   "id": 110,
    "page": "Field note: CrediClip data plane",
    "pageTitle": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis · Field notes · Ali Raza",
    "heading": "Tradeoffs and limits",
@@ -883,7 +891,7 @@
    "text": "Tradeoffs and limits\nThe design is intentionally pragmatic, but it has limits.\nSQLite is suitable for a small deployment with a limited number of concurrent writers. At higher scale, the job store should move to PostgreSQL and a dedicated queue such as Redis, RabbitMQ, or a managed equivalent.\nPolling is simple but introduces repeated requests and small delays. Server-Sent Events or WebSockets could improve result delivery for a larger interactive product.\nPlatform adapters remain dependent on external websites whose markup, authentication, and anti-automation controls can change. The lane model contains those failures, but it cannot eliminate them.\nFinally, routing by platform is only a first-level policy. A mature system could route by evidence requirements, expected duration, account/session availability, or resource class."
   },
   {
-   "id": 110,
+   "id": 111,
    "page": "Field note: CrediClip data plane",
    "pageTitle": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis · Field notes · Ali Raza",
    "heading": "Lessons from building the data plane",
@@ -891,7 +899,7 @@
    "text": "Lessons from building the data plane\nThe main lesson was that credibility analysis is not only a modeling problem. Before scoring can be trusted, the system must reliably collect and describe the evidence that reached the model.\nSeparating the control plane from the data plane created a stable boundary between user-facing coordination and unpredictable media work. Adding lanes then turned platform differences into explicit routing decisions rather than hidden exceptions inside one large process.\nFor an MVP, the best architecture is not necessarily the one with the most infrastructure. It is the smallest architecture that makes failure visible, protects the user-facing path, and leaves clear upgrade points. In CrediClip, a FastAPI control plane, a durable SQLite queue, and lane-aware Python workers were enough to achieve that goal.\nProject: CrediClip on GitHub\nAuthor: Ali Raza\nTopic: Data-plane architecture for short-form video credibility analysis\nFirst published on GitHub Pages . This is now the main copy.\nContinue exploring"
   },
   {
-   "id": 111,
+   "id": 112,
    "page": "Field note: CrediClip data plane",
    "pageTitle": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis · Field notes · Ali Raza",
    "heading": "See the complete CrediClip implementation.",
@@ -899,7 +907,7 @@
    "text": "See the complete CrediClip implementation.\nThe repository contains the API, queue, platform adapters, scoring pipeline, diagnostics, and worker service definitions discussed in this note.\nRead the case study\nOpen the GitHub repository"
   },
   {
-   "id": 112,
+   "id": 113,
    "page": "Field note: CrediClip data plane",
    "pageTitle": "Building a Multi-Lane Data Plane for Short-Form Video Credibility Analysis · Field notes · Ali Raza",
    "heading": "More field notes",
@@ -907,7 +915,7 @@
    "text": "More field notes\nBuilding the Data Plane Behind a Phone-Ready Window-Cleaning Quote Blue Ocean Window Cleaning · 11 min read\nWhat 780 completed video jobs taught me about AI product quality CrediClip · 6 min read"
   },
   {
-   "id": 113,
+   "id": 114,
    "page": "Field note: CrediClip AI product quality",
    "pageTitle": "What 780 completed video jobs taught me about AI product quality · Field notes · Ali Raza",
    "heading": "",
@@ -915,7 +923,7 @@
    "text": "Home / Notes / CrediClip\nAI product evaluation · CrediClip"
   },
   {
-   "id": 114,
+   "id": 115,
    "page": "Field note: CrediClip AI product quality",
    "pageTitle": "What 780 completed video jobs taught me about AI product quality · Field notes · Ali Raza",
    "heading": "What 780 completed video jobs taught me about AI product quality",
@@ -923,7 +931,7 @@
    "text": "What 780 completed video jobs taught me about AI product quality\nHow evidence coverage, readiness benchmarks, and explicit uncertainty shaped the CrediClip roadmap.\nAuthor\nAli Raza\nPublished\nOctober 26, 2026\nReading time\n6 min read\nAI Product Management\nEvaluation\nEvidence Extraction\nFastAPI\nOn this page\nA completed job is an easy result to count. In an AI application, understanding what that completed job contains takes more work.\nI encountered that distinction while building CrediClip, a system that accepts a public short-form video link and returns a credibility score, risk flags, claim assessments, and an evidence-coverage breakdown. The product brought together several different problems: getting access to a video, recovering its text and speech, assessing claims, and presenting a result a person could interpret.\nIn the March 11, 2026 YouTube batch, all 780 jobs eventually completed, including two retried links. Yet 759 of 780 results, or 97.3%, were flagged as low evidence. The pipeline finished its work while recovering little information from most inputs. That result became a useful way to explain what the evaluation established and where the product still needed improvement."
   },
   {
-   "id": 115,
+   "id": 116,
    "page": "Field note: CrediClip AI product quality",
    "pageTitle": "What 780 completed video jobs taught me about AI product quality · Field notes · Ali Raza",
    "heading": "The benchmark that redirected the roadmap",
@@ -931,7 +939,7 @@
    "text": "The benchmark that redirected the roadmap\nBefore expanding the product, I ran a balanced, seeded benchmark of 100 videos against four readiness gates on March 4, 2026. Ingestion success was 46%, against a threshold of at least 85%. Among the 46 inputs with successful ingestion, 45 had insufficient evidence for claim verification: 97.8%, against a target of no more than 40%. Score variation also fell below the chosen threshold. The supplied queue reliability measurement passed at 97%.\nThese were readiness thresholds I had chosen for the project, rather than universal standards for credibility products. Their value was in making a decision concrete. A functioning queue did not resolve the lack of evidence. Changing score weights would still leave the system working with sparse inputs.\nThe results redirected my effort toward ingestion: browser rendering, on-screen text extraction, speech recognition, and platform-specific recovery paths. Evaluation gave me a reason to change the roadmap and a way to explain that choice."
   },
   {
-   "id": 116,
+   "id": 117,
    "page": "Field note: CrediClip AI product quality",
    "pageTitle": "What 780 completed video jobs taught me about AI product quality · Field notes · Ali Raza",
    "heading": "Evidence recovery became a product concern",
@@ -939,7 +947,7 @@
    "text": "Evidence recovery became a product concern\nShort-form video exposes important information through several channels. A caption may contain context, speech may contain the main claim, and text on a frame may carry information missing from both. Losing a channel can change what the system is able to assess.\nThe extraction paths also differed by platform. Public metadata could be thin, browser rendering could recover additional text, and media access could determine whether speech recognition was possible. I brought those outputs into a shared evidence structure so the product could show what had been recovered.\nIn the 19-link Instagram benchmark comparing March 11 and March 13, 2026, average evidence tokens increased from 1.0 to 130.9 after the ingestion redesign. That was an improvement in recovered evidence on a small benchmark. It did not measure whether credibility judgments had become more accurate. Keeping that distinction attached to the number matters when describing the result."
   },
   {
-   "id": 117,
+   "id": 118,
    "page": "Field note: CrediClip AI product quality",
    "pageTitle": "What 780 completed video jobs taught me about AI product quality · Field notes · Ali Raza",
    "heading": "The architecture had to support the extraction work",
@@ -947,7 +955,7 @@
    "text": "The architecture had to support the extraction work\nThe first version performed heavy processing inside the web process. Video downloads, headless browsers, and speech recognition created memory pressure on the small hosting instance.\nI separated the lightweight FastAPI control plane from the workers doing heavy extraction. The web tier handled requests, queue state, scoring, and results. Workers handled platform-specific ingestion and returned artifacts for assessment.\nI also separated YouTube work into its own lane after slow or blocked jobs interfered with the other platforms. This was a decision about the user’s wait as well as infrastructure. An unpredictable dependency on one platform should not hold up unrelated work."
   },
   {
-   "id": 118,
+   "id": 119,
    "page": "Field note: CrediClip AI product quality",
    "pageTitle": "What 780 completed video jobs taught me about AI product quality · Field notes · Ali Raza",
    "heading": "Showing uncertainty in the output",
@@ -955,7 +963,7 @@
    "text": "Showing uncertainty in the output\nCrediClip needed a way to represent an assessment made from limited evidence. I kept the final score in deterministic application code and used an analysis-confidence value to control how far the result moved from a neutral anchor of 52.\nWhen evidence is thin, that rule keeps the score near the anchor. The interface also presents evidence coverage so a reader can see the basis for the assessment. This is a designed behavior; its usefulness and calibration still need stronger evaluation. A precise-looking score does not by itself establish a precise judgment.\nLLMs have a narrower role in the workflow. They can produce structured claim assessments when evidence thresholds are met. They do not directly write the final credibility number. That boundary makes the scoring rule easier to inspect and keeps the role of the model explicit."
   },
   {
-   "id": 119,
+   "id": 120,
    "page": "Field note: CrediClip AI product quality",
    "pageTitle": "What 780 completed video jobs taught me about AI product quality · Field notes · Ali Raza",
    "heading": "Three questions for evaluating the product",
@@ -963,7 +971,7 @@
    "text": "Three questions for evaluating the product\nThe work left me with three separate questions. Did the processing complete? Did it recover enough relevant evidence? Did the assessment match an independently established judgment?\nThe 780-link batch answered the first question for that run and exposed limitations in the second. It did not settle the third. Answering that would require stronger labeled evaluation, careful separation of calibration and test data, and reporting across platforms and content types.\nSeveral limitations remain in CrediClip: uneven platform access, hand-set scoring weights, restricted retrieval coverage, and small labeled evaluations. The case study also discloses curated presentation examples. Those examples are separate from the reported batch results.\nFor me, the product lesson was to connect each metric to a decision. Completion helped evaluate the processing workflow. Evidence coverage helped identify the next ingestion work. Stronger independent evaluation is needed to assess the credibility judgments themselves.\nBuilding the workflow and documenting those distinctions gave me a clearer view of what I had shipped, what its outputs meant, and what I needed to learn next."
   },
   {
-   "id": 120,
+   "id": 121,
    "page": "Field note: CrediClip AI product quality",
    "pageTitle": "What 780 completed video jobs taught me about AI product quality · Field notes · Ali Raza",
    "heading": "Sources and further reading",
@@ -971,7 +979,7 @@
    "text": "Sources and further reading\nThis article adapts the evaluation and product lessons in my original CrediClip case study .\n780-link YouTube batch summary , including evidence coverage and retried links.\nMarch 4 readiness benchmark , including gate thresholds and counts.\nInstagram benchmark summary , with the before and after reports.\nBuilding the CrediClip data plane , the accompanying architecture article.\nSource code and my portfolio .\nFirst published on GitHub Pages . This is now the main copy.\nContinue exploring"
   },
   {
-   "id": 121,
+   "id": 122,
    "page": "Field note: CrediClip AI product quality",
    "pageTitle": "What 780 completed video jobs taught me about AI product quality · Field notes · Ali Raza",
    "heading": "See the complete CrediClip project.",
@@ -979,7 +987,7 @@
    "text": "See the complete CrediClip project.\nThe case study covers the problem, product decisions, and evaluation. The repository has the reports linked above.\nRead the case study\nOpen the GitHub repository"
   },
   {
-   "id": 122,
+   "id": 123,
    "page": "Field note: CrediClip AI product quality",
    "pageTitle": "What 780 completed video jobs taught me about AI product quality · Field notes · Ali Raza",
    "heading": "More field notes",
@@ -987,7 +995,7 @@
    "text": "More field notes\nBuilding the Data Plane Behind a Phone-Ready Window-Cleaning Quote Blue Ocean Window Cleaning · 11 min read\nBuilding a Multi-Lane Data Plane for Short-Form Video Credibility Analysis CrediClip · 10 min read"
   },
   {
-   "id": 123,
+   "id": 124,
    "page": "Field note: Blue Ocean estimator data plane",
    "pageTitle": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote · Field notes · Ali Raza",
    "heading": "",
@@ -995,7 +1003,7 @@
    "text": "Home / Notes / Blue Ocean Window Cleaning\nEngineering note · Blue Ocean Window Cleaning"
   },
   {
-   "id": 124,
+   "id": 125,
    "page": "Field note: Blue Ocean estimator data plane",
    "pageTitle": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote · Field notes · Ali Raza",
    "heading": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote",
@@ -1003,7 +1011,7 @@
    "text": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote\nHow I turned 11,000+ Housecall Pro jobs, San Diego parcel records, and a small set of tracked jobs into an explainable pricing engine that office staff can use on a live call.\nAuthor\nAli Raza\nPublished\nOctober 26, 2026\nReading time\n11 min read\nNext.js\nTypeScript\nData Pipelines\nRegression\nPricing\nOn this page\nA caller asks a simple question: “How much to clean the windows on my house?” Answering it well is harder than it sounds. The office has a phone number, an address, and maybe a rough description of the home. The price needs to be fair, consistent across agents, and ready before the caller loses interest.\nI built the Blue Ocean Estimate Tool during my summer 2026 Business Operations Internship at Blue Ocean Window Cleaning, a residential and commercial cleaning company in San Diego. It is an internal Next.js app that produces phone-ready quotes for new customers from phone and Angi leads. This article explains the part that does most of the work but never appears on screen: the data plane that turns raw job history into the files the quote engine reads.\nThe code excerpts below are shortened from the working project for readability. Figures are aggregates from the project’s own validation reports. No customer-level data appears in this article."
   },
   {
-   "id": 125,
+   "id": 126,
    "page": "Field note: Blue Ocean estimator data plane",
    "pageTitle": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote · Field notes · Ali Raza",
    "heading": "The quoting problem",
@@ -1011,7 +1019,7 @@
    "text": "The quoting problem\nBefore the tool, quoting relied on individual judgment and spreadsheets. Two agents could quote the same house differently, and neither could easily explain why. The business already had the raw material for something better: years of completed jobs in Housecall Pro (HCP), its field-service platform. That history was messy, though.\nMixed tickets. A single job might combine window cleaning with solar panels, gutters, screens, or pressure washing. Its total says little about the price of windows alone.\nMissing property data. Jobs record an address, not the square footage, bedrooms, or stories that drive effort.\nUnstructured hours. Time on site often lives in free-text descriptions rather than clean fields.\nScope ambiguity. “Inside only,” “outside only,” “select windows,” and “partial” all mean very different amounts of work.\nThe goal was a quote an agent could give in under a minute, with a range, a confidence signal, and a plain-language explanation of how the number was reached."
   },
   {
-   "id": 126,
+   "id": 127,
    "page": "Field note: Blue Ocean estimator data plane",
    "pageTitle": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote · Field notes · Ali Raza",
    "heading": "Two-plane architecture",
@@ -1019,7 +1027,7 @@
    "text": "Two-plane architecture\nI split the system into two planes with very different jobs.\nThe data plane is a set of offline Node.js scripts. It pulls job history, cleans and enriches it, fits models, validates them, and promotes the results into versioned JSON files.\nThe quote path is the Next.js app. It never touches raw history. On each request it reads the promoted JSON, looks up the property, and computes a price.\nHousecall Pro API ──> sync ──> clean ──> enrich ──> calibrate ──> train\n|\noffice corrections ──┐ v\n├──> validate ──> promote\n| |\n| v\n| data/*.json artifacts\n| |\nCaller address ──> parcel lookup ──> quote engine <─────────────────┘\n|\nv\nprice + range + confidence + explanation\n|\n└──> office log ──> corrections\nThis boundary keeps expensive preparation outside the request path. API pagination, text parsing, and regression fitting happen offline, so a failed preparation run can be inspected before its artifacts replace the files used for quotes. Artifact promotion and concurrent writes still need explicit controls."
   },
   {
-   "id": 127,
+   "id": 128,
    "page": "Field note: Blue Ocean estimator data plane",
    "pageTitle": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote · Field notes · Ali Raza",
    "heading": "Step 1: sync completed jobs from Housecall Pro",
@@ -1027,7 +1035,7 @@
    "text": "Step 1: sync completed jobs from Housecall Pro\nThe pipeline starts with the HCP Public API. The sync script pulls completed jobs for a time window, caches the raw responses, and merges them into the same CSV shape as a manual HCP export. Keeping one export format meant every later stage worked whether the data came from the API or a spreadsheet download.\nnode ml/sync-hcp-api.mjs --days = 180 --with-line-items # incremental pull\nnode ml/sync-hcp-api.mjs --comps-only # rebuild comps offline\nnode ml/sync-hcp-api.mjs --max-pages = 5 --dry-run # safe test run\nThe --comps-only flag rebuilds downstream files from the cached export without calling the API again. That made iteration cheap: I could change cleaning rules and regenerate everything in seconds. The most recent sync covered 11,482 jobs , with on-site hours recovered for 7,595 of them and technician counts for 8,971 ."
   },
   {
-   "id": 128,
+   "id": 129,
    "page": "Field note: Blue Ocean estimator data plane",
    "pageTitle": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote · Field notes · Ali Raza",
    "heading": "Step 2: keep only window-cleaning work",
@@ -1035,7 +1043,7 @@
    "text": "Step 2: keep only window-cleaning work\nThe single most important cleaning decision was to train only on jobs whose price reflects window cleaning. A classifier reads each job description and keeps three pure categories: inside and out, outside only, and inside only.\nexport const NON_WINDOW_KEYWORDS = [\n{ key : \" solar_panel \" , patterns : [ /solar \\s *panel/i , / \\b solar \\b /i ] },\n{ key : \" gutter \" , patterns : [ /gutter/i , /ledges ?\\s +cleaned/i ] },\n{ key : \" screen_repair \" , patterns : [ /screen \\s *repair/i ] },\n{ key : \" pressure_wash \" , patterns : [ /pressure \\s *wash/i , /power \\s *wash/i ] },\n// ...about thirty categories in total\n];\nexport const PURE_WINDOW_CATEGORIES = new Set ([\n\" window_inside_and_out \" ,\n\" window_outside_only \" ,\n\" window_inside_only \" ,\n]);\nJobs are not simply dropped when they don’t fit. They are routed into separate files for mixed , ambiguous (“select windows,” “west-facing only,” “TBD”), unspecified , and excluded work. For mixed jobs, the cleaner tries to extract the window-only amount from line items, so a window-plus-gutter ticket can still contribute its window portion. Keeping the rejects visible made the filter auditable: when a rule looked too aggressive, I could open the excluded file and see exactly what it had removed."
   },
   {
-   "id": 129,
+   "id": 130,
    "page": "Field note: Blue Ocean estimator data plane",
    "pageTitle": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote · Field notes · Ali Raza",
    "heading": "Step 3: enrich with San Diego parcel records",
@@ -1043,7 +1051,7 @@
    "text": "Step 3: enrich with San Diego parcel records\nA job’s address becomes useful only when it is joined to property features. The enrichment step queries the public SanGIS parcel service for living area, bedrooms, and bathrooms. Two details mattered more than expected.\nFirst, the parcel data contains two size fields. One describes the lot, not the house. Using it inflated large-lot homes dramatically, so the lookup prefers assessor living area:\n/** Prefer assessor living area; USABLE_SQ_FEET is lot/usable land, not house size. */\nfunction inferSqft ( attrs : ParcelAttributes ): number | undefined {\nreturn parseNumericField ( attrs . TOTAL_LVG_AREA ) ?? parseNumericField ( attrs . USABLE_SQ_FEET );\n}\nSecond, bathroom counts are sometimes stored without a decimal point, so “35” means 3.5 baths:\nconst n = parseInt ( text , 10 );\nif ( n >= 10 && n < 100 ) return n / 10 ;\nAddress matching is fuzzy by nature, so the lookup tries a sequence of query strategies, from the strictest (house number, street, community, and ZIP) to looser fallbacks. A final sanity check caps square footage that is implausible for the bedroom and bathroom count, which catches bad parcel matches before they reach the price.\nParcel enrichment succeeded for 3,323 of 11,464 validated jobs (29%). That coverage limit shaped the design: the quote engine has to work well both with and without a parcel match."
   },
   {
-   "id": 130,
+   "id": 131,
    "page": "Field note: Blue Ocean estimator data plane",
    "pageTitle": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote · Field notes · Ali Raza",
    "heading": "Step 4: recover hours and rates from descriptions",
@@ -1051,7 +1059,7 @@
    "text": "Step 4: recover hours and rates from descriptions\nPrice alone does not explain effort. A parser extracts price-relevant signals from job descriptions and API job objects: on-site hours, technician count, and per-pane notes. Durations outside a plausible range (under 15 minutes or over 16 hours) are discarded rather than trusted.\nFrom these signals the pipeline computes dollars per hour by scope . That rate becomes an independent pricing signal for brand-new addresses: predicted hours multiplied by the historical hourly rate."
   },
   {
-   "id": 131,
+   "id": 132,
    "page": "Field note: Blue Ocean estimator data plane",
    "pageTitle": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote · Field notes · Ali Raza",
    "heading": "Step 5: train the exterior model and derive the rest",
@@ -1059,7 +1067,7 @@
    "text": "Step 5: train the exterior model and derive the rest\nMy first instinct was to fit a separate regression for each scope. The data argued otherwise. The model for “inside and out” jobs was far noisier (mean absolute error around $174 ) than the exterior-only model (around $61 ), largely because interior work varies so much from home to home.\nSo I made exterior pricing the single regression and derived the other scopes from it with the company’s established rule of thumb: exterior is 60% of a full inside-and-out job.\nexport const EXTERIOR_SHARE_OF_BOTH = 0.6 ;\nexport const INTERIOR_SHARE_OF_BOTH = 0.4 ;\nexport function bothFromExterior ( exteriorPrice : number ): number {\nreturn exteriorPrice / EXTERIOR_SHARE_OF_BOTH ;\n}\nexport function interiorFromBoth ( bothPrice : number ): number {\nreturn bothPrice * INTERIOR_SHARE_OF_BOTH ;\n}"
   },
   {
-   "id": 132,
+   "id": 133,
    "page": "Field note: Blue Ocean estimator data plane",
    "pageTitle": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote · Field notes · Ali Raza",
    "heading": "Step 5: train the exterior model and derive the rest",
@@ -1067,7 +1075,7 @@
    "text": "The exterior model is an ordinary least squares regression on square footage, bedrooms, bathrooms, property type, and lead source. Its training set blends two sources. A capped base sample of cleaned historical jobs carries modest weights, with parcel-matched rows weighted higher than unmatched ones. A small gold set of 18 jobs from a manually maintained job-tracking sheet, with clean paid amounts and durations, carries a much heavier weight so it can steer the fit. On that gold set the model reached a mean absolute error of about $58 , with two-thirds of quotes within 25% of the actual price."
   },
   {
-   "id": 133,
+   "id": 134,
    "page": "Field note: Blue Ocean estimator data plane",
    "pageTitle": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote · Field notes · Ali Raza",
    "heading": "Step 6: promote artifacts, not databases",
@@ -1075,7 +1083,7 @@
    "text": "Step 6: promote artifacts, not databases\nEvery stage writes plain files. The final step promotes validated outputs into data/ : model coefficients, calibration tables, price lookups, address comps, and sync metadata. The app reads them through a small cache keyed on file modification time:\nexport function readJsonData < T > ( relativePath : string ): T {\nconst file = path . join ( process . cwd (), relativePath );\nconst mtime = fs . statSync ( file ). mtimeMs ;\nconst hit = caches . get ( relativePath ) as CacheEntry < T > | undefined ;\nif ( hit && hit . mtime === mtime ) return hit . data ;\nconst data = JSON . parse ( fs . readFileSync ( file , \" utf8 \" )) as T ;\ncaches . set ( relativePath , { data , mtime });\nreturn data ;\n}\nWhen the pipeline promotes a new comps file, the next quote picks it up automatically, with no restart and no migration. For a small internal tool, that tradeoff was worth it: the “database” is a folder that can be diffed, backed up, and versioned, and every model carries a version string that appears on each quote."
   },
   {
-   "id": 134,
+   "id": 135,
    "page": "Field note: Blue Ocean estimator data plane",
    "pageTitle": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote · Field notes · Ali Raza",
    "heading": "The live quote path",
@@ -1083,7 +1091,7 @@
    "text": "The live quote path\nWith the artifacts in place, a quote request is fast and deterministic. The engine layers several signals, each with its own weight:\nExterior regression , adjusted for stories with a ladder premium.\nLookup tables of historical prices by property segment, blended in proportion to how many jobs support the matching cell.\nAddress comps from prior jobs at the same address, weighted heavily when there are several visits.\nHours times rate for new addresses, using predicted hours and the historical hourly rate.\nPrice-ladder snapping up to the next standard price point the office already uses.\nGuardrails : a floor and ceiling per scope, plus a range around the recommended price.\nconst blendedScoped = lookupWeight * scopedLookup . price + ( 1 - lookupWeight ) * regScoped ;\nif ( addressHit ) {\nmergedScoped = addrWeight * addressHit . price + ( 1 - addrWeight ) * blendedScoped ;\n} else if ( hoursRateHit && scope !== \" interior \" ) {\nmergedScoped = hoursRateWeight * hoursRateHit . price + ( 1 - hoursRateWeight ) * blendedScoped ;\n}\nconst snapped = snapToPriceLadderUp ( mergedScoped );\nconst price = applyPriceGuardrails ( snapped , exteriorBase , scope , propertyKind , {\naccurate : tightlyComped ,\n});"
   },
   {
-   "id": 135,
+   "id": 136,
    "page": "Field note: Blue Ocean estimator data plane",
    "pageTitle": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote · Field notes · Ali Raza",
    "heading": "The live quote path",
@@ -1091,7 +1099,7 @@
    "text": "Two design choices made the output usable on a call. First, every quote returns a step-by-step explanation (“Step 1: exterior regression $X; Step 4: HCP lookup, n jobs, 40% blend…”), shown in a derivation panel, so an agent can defend the number. Second, a confidence score rises when the parcel matched, when the caller confirmed square footage, or when many historical jobs back the lookup cell. Low confidence prompts the agent to confirm details instead of guessing."
   },
   {
-   "id": 136,
+   "id": 137,
    "page": "Field note: Blue Ocean estimator data plane",
    "pageTitle": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote · Field notes · Ali Raza",
    "heading": "The feedback loop",
@@ -1099,7 +1107,7 @@
    "text": "The feedback loop\nA pricing model drifts unless reality flows back into it. The app has two surfaces: a full estimate workspace and a simplified front-desk view. Every desk quote is written to a shared office log. When a job’s real price differs, staff record a “should-be” price on the Corrections page.\nA single command folds those corrections back into the live tables:\nif ( ! skipSync ) await run ( \" node \" , [ \" ml/sync-correction-log.mjs \" ]);\nawait run ( \" node \" , [ \" ml/build-price-lookup.mjs \" ]);\nawait run ( \" node \" , [ \" ml/build-address-lookup.mjs \" ]);\nawait run ( \" node \" , [ \" ml/promote-customer-data.mjs \" ]);\nThis provides a path for staff to correct a price and supply labels for later preparation runs. It does not establish adoption, correction quality, or improved accuracy; corrections still need scope checks and review before reuse."
   },
   {
-   "id": 137,
+   "id": 138,
    "page": "Field note: Blue Ocean estimator data plane",
    "pageTitle": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote · Field notes · Ali Raza",
    "heading": "Validation",
@@ -1107,7 +1115,7 @@
    "text": "Validation\nEach pipeline run ends with validation against historical jobs, using the live TypeScript predictor rather than a separate reimplementation, plus bootstrap resampling to put confidence intervals on the error.\nMeasure\nEarly validation\nLive predictor\nJobs evaluated\n8,362\n11,464\nMean absolute error\n$239\n$73 (95% CI $70–$76)\nMedian absolute % error\n47%\n10%\nQuotes within 10%\n11%\n49%\nQuotes within 25%\n26%\n73%\nThe two columns use different job sets, so this is not a controlled experiment. The early column is the first validation pass. The live-predictor column, three days later, scored the enriched training set with the full blended engine, including lookups and address comps. The later run combines cleaning, enrichment, and comparable-job signals, but these evaluations do not isolate the contribution of each change.\nThe numbers also need an honest caveat. The live predictor uses address comps built from the same history it is scored on, so repeat addresses look better than a truly new customer would. The reported mean bias was about $23 under the reference price. This is an observed error, not evidence that underpricing is desirable. A separate check on 17 known townhome units from an HOA project landed within 10% for 82% of units; the small, specific sample does not establish generalization."
   },
   {
-   "id": 138,
+   "id": 139,
    "page": "Field note: Blue Ocean estimator data plane",
    "pageTitle": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote · Field notes · Ali Raza",
    "heading": "Tradeoffs and limits",
@@ -1115,7 +1123,7 @@
    "text": "Tradeoffs and limits\nThe architecture is deliberately small, and that has costs.\nFiles instead of a database. JSON artifacts are easy to inspect and version, but they assume a single writer and a modest data size. A larger operation would move job history to PostgreSQL and schedule the pipeline.\nAddress matching is heuristic. Normalized street strings and fuzzy parcel queries require match-quality checks. Parcel coverage was 29% in the reported run; the evaluation does not isolate its effect on accuracy.\nEvaluation is optimistic for repeat addresses. The next step is a time-based holdout that scores only addresses first seen after the training cutoff.\nThe gold set is small. Eighteen heavily weighted jobs can strongly affect the fit. More representative labels and held-out evaluation are needed to assess stability.\nCustomer data needs a separate home. Training inputs contain customer-level records. In a next iteration I would keep raw exports in private storage and commit only aggregated, anonymized artifacts."
   },
   {
-   "id": 139,
+   "id": 140,
    "page": "Field note: Blue Ocean estimator data plane",
    "pageTitle": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote · Field notes · Ali Raza",
    "heading": "Lessons learned",
@@ -1123,7 +1131,7 @@
    "text": "Lessons learned\nThe biggest lesson was to make data assumptions inspectable: which jobs count as window cleaning, which size field describes the house, and how hours are recovered from free text. The retrospective comparisons do not isolate the effect of those choices from model changes or repeat-address evidence.\nThe second lesson was to treat explainability as a product feature, not a nice-to-have. An agent will not trust a number they cannot explain to a customer. Showing each pricing step, with its source and weight, gives staff a basis for reviewing and correcting a quote.\nThe resulting design uses scripts to write versioned JSON artifacts for a small Next.js app. That makes the calculation inspectable and identifies future storage and promotion work. It does not, by itself, establish business savings, adoption, or a reduction in quoting time.\nProject: Blue Ocean Estimate Tool (internal Next.js app)\nAuthor: Ali Raza, Business Operations Intern, Blue Ocean Window Cleaning\nTopic: Data-plane architecture for service-business price estimation\nFirst published on GitHub Pages . This is now the main copy.\nContinue exploring"
   },
   {
-   "id": 140,
+   "id": 141,
    "page": "Field note: Blue Ocean estimator data plane",
    "pageTitle": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote · Field notes · Ali Raza",
    "heading": "See the project in context.",
@@ -1131,7 +1139,7 @@
    "text": "See the project in context.\nThe Experience page covers my role as Business Operations Intern and what I shipped. The estimate tool itself is private, and no customer data is published.\nRead about the internship"
   },
   {
-   "id": 141,
+   "id": 142,
    "page": "Field note: Blue Ocean estimator data plane",
    "pageTitle": "Building the Data Plane Behind a Phone-Ready Window-Cleaning Quote · Field notes · Ali Raza",
    "heading": "More field notes",
@@ -1139,7 +1147,183 @@
    "text": "More field notes\nWhat 780 completed video jobs taught me about AI product quality CrediClip · 6 min read\nBuilding a Multi-Lane Data Plane for Short-Form Video Credibility Analysis CrediClip · 10 min read"
   },
   {
-   "id": 142,
+   "id": 143,
+   "page": "Field note: Raasta product experiment",
+   "pageTitle": "Raasta: an instrumented product experiment · Ali Raza",
+   "heading": "",
+   "url": "https://alirazaai.page/notes/raasta-product-experiment",
+   "text": "Field notes / Raasta\nIndependent product experiment · November 5, 2026"
+  },
+  {
+   "id": 144,
+   "page": "Field note: Raasta product experiment",
+   "pageTitle": "Raasta: an instrumented product experiment · Ali Raza",
+   "heading": "Turning a working intake flow into a measurable product decision",
+   "url": "https://alirazaai.page/notes/raasta-product-experiment",
+   "text": "Turning a working intake flow into a measurable product decision\nRaasta combines a human-reviewed quote workflow, two usable intake experiences and a local measurement loop. This case study explains the decision, the instrumented behavior and what the evidence can support.\nTry Raasta ↗ · Inspect the source ↗ · Read the experiment plan ↗\nOriginal conceptual cover artwork. The working interface is available in the demo."
+  },
+  {
+   "id": 145,
+   "page": "Field note: Raasta product experiment",
+   "pageTitle": "Raasta: an instrumented product experiment · Ali Raza",
+   "heading": "The decision and my role",
+   "url": "https://alirazaai.page/notes/raasta-product-experiment",
+   "text": "The decision and my role\nShould an intake form show every field at once or guide the participant through a short sequence? I treated cognitive load as an unvalidated usability risk and built a way to investigate it. I scoped the product question, designed the variants and event contract, implemented the workflow with AI assistance, and defined guardrails and next validation steps. No customer interviews or adoption gains are claimed."
+  },
+  {
+   "id": 146,
+   "page": "Field note: Raasta product experiment",
+   "pageTitle": "Raasta: an instrumented product experiment · Ali Raza",
+   "heading": "Two experiences, the same underlying rules",
+   "url": "https://alirazaai.page/notes/raasta-product-experiment",
+   "text": "Two experiences, the same underlying rules\nThe control displays the request, service, quantity and property-height fields together. Guided intake separates request and service selection, property details, and a review screen. Both use the same fictional price catalog and preserve the same human-review gate. This keeps the experiment focused on the intake experience.\nThe real GrowthBook JavaScript SDK assigns a stable anonymous alias to an arm using a pinned experiment key, equal weights and hash version 2. A missing identifier is not enrollment. The public demo lets a reviewer try either assigned experience."
+  },
+  {
+   "id": 147,
+   "page": "Field note: Raasta product experiment",
+   "pageTitle": "Raasta: an instrumented product experiment · Ali Raza",
+   "heading": "What success means",
+   "url": "https://alirazaai.page/notes/raasta-product-experiment",
+   "text": "What success means\nThe primary metric is the share of eligible exposed participants who reach a valid quote-review state. The funnel counts each participant once and ignores completion events before exposure. Reaching quote review is distinct from human approval, scheduling, revenue or a completed service job.\nFor planning only, a 40% baseline, a 15 percentage-point minimum detectable effect, two-sided 5% significance and 80% power imply about 173 participants per arm under a standard two-proportion approximation. A provisional target of 200 per arm adds planning headroom. These are assumptions to revisit after a pilot, not observed conversion results."
+  },
+  {
+   "id": 148,
+   "page": "Field note: Raasta product experiment",
+   "pageTitle": "Raasta: an instrumented product experiment · Ali Raza",
+   "heading": "Analytics with a narrow data contract",
+   "url": "https://alirazaai.page/notes/raasta-product-experiment",
+   "text": "Analytics with a narrow data contract\nRecording begins only when the operator starts a local test session. Events identify exposure, intake start, reaching review, abandonment, validation errors and human decisions. The allowlist includes an anonymous alias, variation, a synthetic-data marker and optional elapsed milliseconds. It excludes request text, names, contact details and quote contents.\nEvents remain in browser memory until exported or explicitly sent for local verification. The actual PostHog Node SDK sends them to a temporary loopback collector. That collector independently checks delivery and payload contents. This verifies SDK transport; it does not constitute a deployed PostHog analytics backend."
+  },
+  {
+   "id": 149,
+   "page": "Field note: Raasta product experiment",
+   "pageTitle": "Raasta: an instrumented product experiment · Ali Raza",
+   "heading": "Guardrails before a winner",
+   "url": "https://alirazaai.page/notes/raasta-product-experiment",
+   "text": "Guardrails before a winner\nPreserve identical quote logic and the human-review requirement.\nInspect validation errors, handoffs and time to review alongside completion.\nSeparate synthetic practice from consented usability-test data.\nAgree eligibility, exclusions and a stopping rule before collecting randomized traffic.\nUse initial usability sessions to find comprehension problems before attempting a powered experiment."
+  },
+  {
+   "id": 150,
+   "page": "Field note: Raasta product experiment",
+   "pageTitle": "Raasta: an instrumented product experiment · Ali Raza",
+   "heading": "What has actually been checked",
+   "url": "https://alirazaai.page/notes/raasta-product-experiment",
+   "text": "What has actually been checked\nActual GrowthBook bucketing is repeatable and exercises both arms.\nTests cover missing identity, duplicate completions and exposure ordering.\nThe actual PostHog SDK delivered all 300 events from a 100-participant synthetic simulation to the local collector.\nEvent validation strips unapproved properties.\nThe existing LangGraph approval/resume and idempotence checks remain in place.\nThese are implementation results. The simulation applies different outcome rules by design. Its conversion rates are authored examples, not evidence that guided intake improves a real product. No paid API, real customer traffic or business outcome was used to establish these checks."
+  },
+  {
+   "id": 151,
+   "page": "Field note: Raasta product experiment",
+   "pageTitle": "Raasta: an instrumented product experiment · Ali Raza",
+   "heading": "The next product decision",
+   "url": "https://alirazaai.page/notes/raasta-product-experiment",
+   "text": "The next product decision\nRun consented usability sessions, inspect where participants hesitate, and revise the flow and instrumentation. Once traffic and baseline estimates are adequate, evaluate the predefined completion metric, uncertainty and guardrails at the planned horizon. The current evidence supports proceeding to that validation step."
+  },
+  {
+   "id": 152,
+   "page": "Field note: Raasta product experiment",
+   "pageTitle": "Raasta: an instrumented product experiment · Ali Raza",
+   "heading": "Sources and ownership",
+   "url": "https://alirazaai.page/notes/raasta-product-experiment",
+   "text": "Sources and ownership\nOriginal prototype, interface, fixtures, experiment framing and adapters by Ali Raza, with AI-assisted implementation. Upstream engines: LangGraph , GrowthBook , and PostHog SDK . Recorded local SDK delivery report . This is an independent public prototype, separate from any employer’s private systems."
+  },
+  {
+   "id": 153,
+   "page": "Projects",
+   "pageTitle": "Raza Labs project catalog",
+   "heading": "Raasta",
+   "url": "https://alirazaai.page/projects#ai-labs",
+   "text": "Raasta\nAgent workflows, experiments and analytics\nA human-reviewed LangGraph quote workflow with two usable intake variants, actual GrowthBook assignment, privacy-scoped event recording and locally verified PostHog SDK delivery.\nStage: Independent prototype\nVerified: LangGraph, GrowthBook and local PostHog delivery verified\nLimits: The default planner uses explicit input fields and rules. This is not autonomous model planning. MemorySaver checkpoints last only for the local server process. The handoff records a synthetic event; no real CRM write occurs. The experiment simulation is synthetic. PostHog verification covers SDK serialization and loopback delivery, not a full analytics backend. No causal conversion gain or customer adoption is claimed."
+  },
+  {
+   "id": 154,
+   "page": "Projects",
+   "pageTitle": "Raza Labs project catalog",
+   "heading": "Raza Mentor",
+   "url": "https://alirazaai.page/projects#ai-labs",
+   "text": "Raza Mentor\nSource-grounded study and practice\nAn original study workbench with source-linked passages, practice questions, review tracking and session exports, using an actual local DeepTutor BM25 retrieval component.\nStage: Independent prototype\nVerified: DeepTutor retrieval: 5 fixture checks passed\nLimits: The public page uses a keyword baseline. Local mode uses DeepTutor’s BM25 component, not its full agent platform. No generative tutor, semantic embeddings, real student records or learning-outcome improvements are claimed."
+  },
+  {
+   "id": 155,
+   "page": "Projects",
+   "pageTitle": "Raza Labs project catalog",
+   "heading": "Parakh",
+   "url": "https://alirazaai.page/projects#ai-labs",
+   "text": "Parakh\nAI evaluation and release gates\nAn inspectable release-gate workbench with Promptfoo checks, recorded local-classifier evaluation and actual offline Opik exact-match/JSON metrics with negative controls.\nStage: Independent prototype\nVerified: Promptfoo and actual local Opik metrics\nLimits: Trace checks do not prove factual correctness or authenticate logs. The local model test uses a small synthetic held-out set; it does not establish customer performance. Opik format and equality metrics do not establish semantic correctness; no full Opik backend or model judge was deployed."
+  },
+  {
+   "id": 156,
+   "page": "Projects",
+   "pageTitle": "Raza Labs project catalog",
+   "heading": "Raza Atlas",
+   "url": "https://alirazaai.page/projects#ai-labs",
+   "text": "Raza Atlas\nA source-linked map of product architecture\nAn interactive architecture explorer using actual local Graphify AST extraction, pinned public source provenance and cycle-safe dependency traversal.\nStage: Independent prototype\nVerified: Graphify: 18 nodes, 34 edges, zero model tokens\nLimits: The example is a four-file public Raasta source snapshot. Static edges do not prove runtime behavior or complete change impact. External references are explicitly represented, and no semantic or LLM pass was run."
+  },
+  {
+   "id": 157,
+   "page": "Projects",
+   "pageTitle": "Raza Labs project catalog",
+   "heading": "Awaaz",
+   "url": "https://alirazaai.page/projects#ai-labs",
+   "text": "Awaaz\nLocal voice AI sandbox\nAn independent public sandbox for local speech transcription, service intake, clarification, quote review, and human handoff using fictional records.\nStage: Independent prototype\nVerified: Local Whisper transcription and LiveKit toolset\nLimits: A local English synthetic recording was transcribed successfully. The LiveKit Agent class and quote tool were instantiated, but no live room, telephony call, or external booking was tested. The browser microphone and local speech controls depend on browser support. This sandbox is not the commercial irha service implementation."
+  },
+  {
+   "id": 158,
+   "page": "Projects",
+   "pageTitle": "Raza Labs project catalog",
+   "heading": "Nukta",
+   "url": "https://alirazaai.page/projects#ai-labs",
+   "text": "Nukta\nEvidence-led product discovery\nAn evidence-first discovery workbench with exact quote validation, editable hypotheses, explicit RICE assumptions, and local LlamaIndex/MiniLM retrieval.\nStage: Independent prototype\nVerified: Local LlamaIndex embedding retrieval\nLimits: Exact quote matching does not establish logical support for a hypothesis. Keyword grouping and model-backed retrieval are different modes. The sample interviews are fictional, and RICE values start as operator assumptions."
+  },
+  {
+   "id": 159,
+   "page": "Projects",
+   "pageTitle": "Raza Labs project catalog",
+   "heading": "Rabta",
+   "url": "https://alirazaai.page/projects#ai-labs",
+   "text": "Rabta\nTyped tools for AI integrations\nAn original MCP server exposing typed service-catalog, quote, and job-status tools, verified with actual client/server protocol calls.\nStage: Independent prototype\nVerified: Official MCP SDK round trips\nLimits: The tools operate only on synthetic records and a fictional price catalog. There is no private CRM, OAuth deployment, scheduling write, or customer messaging integration."
+  },
+  {
+   "id": 160,
+   "page": "Projects",
+   "pageTitle": "Raza Labs project catalog",
+   "heading": "RF Prism",
+   "url": "https://alirazaai.page/projects#ai-labs",
+   "text": "RF Prism\nSource-linked technical document AI\nA source-linked technical comparison tool with Docling table extraction, explicit unit normalization, and unknown-value handling.\nStage: Independent prototype\nVerified: Docling HTML extraction verified\nLimits: The verified document is an original fictional HTML datasheet. PDF conversion is supported by the underlying converter but is not yet validated here. Numeric power filters do not establish engineering suitability, and no Analogic specifications or outcomes are claimed."
+  },
+  {
+   "id": 161,
+   "page": "Projects",
+   "pageTitle": "Raza Labs project catalog",
+   "heading": "Dastaan",
+   "url": "https://alirazaai.page/projects#ai-labs",
+   "text": "Dastaan\nAI-assisted storyboarding studio\nA brief-to-storyboard studio with editable scenes, timed previews, SRT/SVG exports, and locally verified Diffusers image generation.\nStage: Independent prototype\nVerified: Actual local diffusion frame rendered\nLimits: The default storyboard is a template. Diffusers renders one planning frame at a time; this is not a finished video generator. Visual continuity and production quality need human review. The optional Ollama drafting adapter remains separately configured."
+  },
+  {
+   "id": 162,
+   "page": "Projects",
+   "pageTitle": "Raza Labs project catalog",
+   "heading": "Ehsaas",
+   "url": "https://alirazaai.page/projects#ai-labs",
+   "text": "Ehsaas\nPrivate on-device feedback intelligence\nA local sentiment and semantic-search workbench using quantized Transformers.js models, with separate rule and actual-inference modes.\nStage: Independent prototype\nVerified: Actual local sentiment and embedding inference\nLimits: The first AI run downloads model/runtime files. Text inference runs on the device. Scores are not calibrated measures of customer importance, and sarcasm or mixed sentiment may be misclassified. Node inference was verified; browser performance varies by device."
+  },
+  {
+   "id": 163,
+   "page": "Projects",
+   "pageTitle": "Raza Labs project catalog",
+   "heading": "Riwayat",
+   "url": "https://alirazaai.page/projects#ai-labs",
+   "text": "Riwayat\nA searchable archive for spoken stories\nA timestamped story explorer preserving multilingual source text, with local faster-whisper transcription and source-linked search.\nStage: Independent prototype\nVerified: Local ASR on original synthetic recording\nLimits: The English recording and supplied bilingual text are fictional fixtures. One local English ASR run does not establish language or dialect accuracy. Automatic translation and real oral-history collection are not claimed."
+  },
+  {
+   "id": 164,
+   "page": "Projects",
+   "pageTitle": "Raza Labs project catalog",
+   "heading": "Zarra",
+   "url": "https://alirazaai.page/projects#ai-labs",
+   "text": "Zarra\nSmall-model adaptation experiments\nA reproducible local BERT/PEFT intent-classification experiment comparing a rule baseline, an unadapted classifier, and a LoRA adapter on a synthetic held-out split.\nStage: Independent prototype\nVerified: Actual local LoRA training and inference\nLimits: The experiment uses 30 synthetic training examples and 12 synthetic held-out examples. Both rules and the adapter scored 100% on this tiny set. This establishes no benefit over rules and no customer generalization. The unadapted classifier head is newly initialized."
+  },
+  {
+   "id": 165,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "Ali Raza",
@@ -1147,7 +1331,7 @@
    "text": "Ali Raza\nHayward, CA | axraza55@gmail.com | linkedin.com/in/ali-raza-2548880 | github.com/aliraza2025 | alirazaportfolio2026.netlify.app"
   },
   {
-   "id": 143,
+   "id": 166,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "EDUCATION",
@@ -1155,7 +1339,7 @@
    "text": "EDUCATION\nCalifornia State University, East Bay | Master of Science in Business Analytics, expected Dec 2026 STEM-designated program with coursework in machine learning, deep learning, data mining, text mining, SQL/Python analytics, and data-driven decision making"
   },
   {
-   "id": 144,
+   "id": 167,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "SKILLS",
@@ -1163,7 +1347,7 @@
    "text": "SKILLS\nPRODUCT MANAGEMENT Product discovery, customer discovery, product strategy, product requirements, PRDs, roadmap planning, prioritization, success metrics, product lifecycle, experimentation, user feedback, launch planning, stakeholder alignment, cross-functional collaboration"
   },
   {
-   "id": 145,
+   "id": 168,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "DATA & ANALYTICS",
@@ -1171,7 +1355,7 @@
    "text": "DATA & ANALYTICS\nSQL, Python, Tableau, product analytics, user and market analysis, KPI and success metrics, funnel analysis, conversion analysis, A/B testing, data-driven decision making"
   },
   {
-   "id": 146,
+   "id": 169,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "TECHNICAL & AI",
@@ -1179,7 +1363,7 @@
    "text": "TECHNICAL & AI\nFastAPI, Next.js, SQLite, Fly.io, Playwright, AI-assisted prototyping, LLM workflows, prompt engineering, responsible AI evaluation, GitHub, Cursor, Codex, Claude Code"
   },
   {
-   "id": 147,
+   "id": 170,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "WORK EXPERIENCE",
@@ -1187,7 +1371,7 @@
    "text": "WORK EXPERIENCE\nBlue Ocean Window Cleaning | Business Operations Intern | San Diego, CA | Jun 2026 – Sep 2026\n- Gathered requirements directly from the owner and staff, translating business and user needs into product requirements for a Next.js quoting application using HouseCall Pro data.\n- Prioritized workflow improvements by balancing staff feedback, business impact, and implementation effort, carrying the highest-value changes through testing, iteration, production launch, and handoff.\n- Built data and optimization tools to guide pricing and operational decisions, including a staffing model that identified ~$3,400/month in potential slow-season savings."
   },
   {
-   "id": 148,
+   "id": 171,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "Analogic | Product Management Intern | Boston, MA | Aug 2025 – May 2026",
@@ -1195,7 +1379,7 @@
    "text": "Analogic | Product Management Intern | Boston, MA | Aug 2025 – May 2026\n- Partnered with engineering and sales to translate complex semiconductor product capabilities, technical constraints, and customer needs into clear use cases, positioning, and launch priorities.\n- Developed technical customer-facing assets for SEMICON West 2025, helping prospective buyers evaluate product value, constraints, and application fit."
   },
   {
-   "id": 149,
+   "id": 172,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "AtlasNova AI | Product Management Intern | Berkeley, CA | Feb 2025 – Jun 2025",
@@ -1203,7 +1387,7 @@
    "text": "AtlasNova AI | Product Management Intern | Berkeley, CA | Feb 2025 – Jun 2025\n- Conducted customer, market, and competitive research for an AI-native B2B platform, translating findings into product positioning and go-to-market decisions.\n- Partnered with product and engineering to synthesize customer feedback and market insights into clearer product priorities and launch materials."
   },
   {
-   "id": 150,
+   "id": 173,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "TECNO Mobile | Product Development Manager | Jun 2023 – Aug 2024",
@@ -1211,7 +1395,7 @@
    "text": "TECNO Mobile | Product Development Manager | Jun 2023 – Aug 2024\n- Analyzed user, engagement, and product performance data to identify opportunities, define KPI insights, and inform product and campaign decisions across cross-functional teams."
   },
   {
-   "id": 151,
+   "id": 174,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "Telenor | Digital Product Manager | Jan 2023 – Jun 2023",
@@ -1219,7 +1403,7 @@
    "text": "Telenor | Digital Product Manager | Jan 2023 – Jun 2023\n- Analyzed KPI, funnel, and performance data to identify conversion gaps and inform product and channel prioritization decisions."
   },
   {
-   "id": 152,
+   "id": 175,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "Garena Free Fire | Product Associate | Jan 2022 – Dec 2022",
@@ -1227,7 +1411,7 @@
    "text": "Garena Free Fire | Product Associate | Jan 2022 – Dec 2022\n- Analyzed community, user, and campaign data to identify audience insights and inform content and product decisions, reaching 118M users and generating 18M engagements."
   },
   {
-   "id": 153,
+   "id": 176,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "OPPO Mobile | Product Associate | Jan 2020 – Jan 2022",
@@ -1235,7 +1419,7 @@
    "text": "OPPO Mobile | Product Associate | Jan 2020 – Jan 2022\n- Translated product launch goals into creator and cross-platform execution strategies, generating 60M+ impressions and 1.5M+ engagements."
   },
   {
-   "id": 154,
+   "id": 177,
    "page": "CV",
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "PROJECTS",

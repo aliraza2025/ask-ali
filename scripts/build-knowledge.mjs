@@ -28,6 +28,7 @@ const PAGES = [
   { file: "notes/crediclip-data-plane.html", path: "/notes/crediclip-data-plane", title: "Field note: CrediClip data plane" },
   { file: "notes/crediclip-ai-product-quality.html", path: "/notes/crediclip-ai-product-quality", title: "Field note: CrediClip AI product quality" },
   { file: "notes/estimator-data-plane.html", path: "/notes/estimator-data-plane", title: "Field note: Blue Ocean estimator data plane" },
+  { file: "notes/raasta-product-experiment.html", path: "/notes/raasta-product-experiment", title: "Field note: Raasta product experiment" },
 ];
 
 const MAX_CHUNK = 1400;
@@ -132,6 +133,13 @@ for (const page of PAGES) {
       });
     }
   }
+}
+
+// Dynamic project cards are rendered from JSON, so index their source catalog explicitly.
+const catalog = JSON.parse(readFileSync(join(siteDir, "assets/ai-project-catalog.json"), "utf8"));
+for (const item of catalog) {
+  const text = [item.title, item.subtitle, item.description, "Stage: " + item.stage, "Verified: " + item.verification, "Limits: " + (item.limitations || "Independent prototype; see its repository for scope.")].filter(Boolean).join("\n");
+  chunks.push({id:chunks.length,page:"Projects",pageTitle:"Raza Labs project catalog",heading:item.title,url:siteUrl+"/projects#ai-labs",text});
 }
 
 // Plain-text sources (e.g. the CV, extracted from its PDF) split on blank lines.
