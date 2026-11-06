@@ -1,6 +1,6 @@
 {
  "site": "https://alirazaai.page",
- "builtAt": "2026-11-06T00:07:01.463Z",
+ "builtAt": "2026-11-06T00:11:12.685Z",
  "chunks": [
   {
    "id": 0,
@@ -120,7 +120,7 @@
    "pageTitle": "Ali Raza · Product Manager · Data Analyst · AI Builder",
    "heading": "Product-minded builder",
    "url": "https://alirazaai.page/#about-heading",
-   "text": "Product-minded builder\nI'm Ali Raza, a product-minded builder based in Hayward, SF Bay Area, completing an M.S. in Business Analytics\nat Cal State East Bay (expected Dec 2026). I work at the intersection of product discovery,\nAI prototyping, and analytics, turning messy problems into shipped workflows.\nFrom CrediClip (an AI credibility MVP) to Blue Ocean Window Cleaning’s estimate and HouseCall Pro-aligned\nops systems, I bring FastAPI/Next.js fluency, product rigor, and cross-functional execution\nthat moves teams from insight to impact.\nProduct Management\nProduct discovery\nProduct strategy\nPRDs\nRoadmap planning\nPrioritization\nLaunch planning\nData & Analytics\nSQL\nPython\nTableau\nProduct analytics\nFunnel analysis\nA/B testing\nTechnical & AI\nFastAPI\nNext.js\nSQLite\nFly.io\nPlaywright\nLLM workflows\nPrompt engineering"
+   "text": "Product-minded builder\nI'm Ali Raza, a product-minded builder based in Hayward, SF Bay Area, California, USA, completing an M.S. in Business Analytics\nat Cal State East Bay (expected Dec 2026). I work at the intersection of product discovery,\nAI prototyping, and analytics, turning messy problems into shipped workflows.\nFrom CrediClip (an AI credibility MVP) to Blue Ocean Window Cleaning’s estimate and HouseCall Pro-aligned\nops systems, I bring FastAPI/Next.js fluency, product rigor, and cross-functional execution\nthat moves teams from insight to impact.\nProduct Management\nProduct discovery\nProduct strategy\nPRDs\nRoadmap planning\nPrioritization\nLaunch planning\nData & Analytics\nSQL\nPython\nTableau\nProduct analytics\nFunnel analysis\nA/B testing\nTechnical & AI\nFastAPI\nNext.js\nSQLite\nFly.io\nPlaywright\nLLM workflows\nPrompt engineering"
   },
   {
    "id": 15,
@@ -136,7 +136,7 @@
    "pageTitle": "Ali Raza · Product Manager · Data Analyst · AI Builder",
    "heading": "Get in Touch",
    "url": "https://alirazaai.page/#contact-heading",
-   "text": "Get in Touch\nBased in Hayward, SF Bay Area. Leave a message below and it goes straight to my inbox,\nbook a 30-minute call, or reach me on LinkedIn, GitHub, or email."
+   "text": "Get in Touch\nBased in Hayward, SF Bay Area, California, USA. Leave a message below and it goes straight to my inbox,\nbook a 30-minute call, or reach me on LinkedIn, GitHub, or email."
   },
   {
    "id": 17,
@@ -144,7 +144,7 @@
    "pageTitle": "Ali Raza · Experience",
    "heading": "Experience",
    "url": "https://alirazaai.page/experience",
-   "text": "Experience\nProduct management, analytics, and go-to-market across global tech brands.\nEducation\nCalifornia State University, East Bay\nM.S. Business Analytics · STEM-designated\nExpected Dec 2026 · Hayward, SF Bay Area\n6+\nYears in product & growth\n118M\nUsers reached\n60M+\nImpressions generated\n3\nInternships (AI, hardware & operations)\nCompanies I've worked with\nBlue Ocean Window Cleaning\nAnalogic\nAnalogic\nAtlasNova\nAtlasNova AI\nCSU East Bay\nTECNO\nTECNO Mobile\nTelenor\nTelenor\nGarena\nGarena Free Fire\nOPPO\nOPPO Mobile\nWork History\n1\nBlue Ocean Window Cleaning\nBusiness Operations Intern\nJun 2026 – Sep 2026\nSan Diego, CA\nProduct Requirements\nNext.js\nHouseCall Pro\nOptimization\nGathered requirements directly from the owner and staff, translating business and user needs into product requirements for a Next.js quoting application using HouseCall Pro data.\nPrioritized workflow improvements by balancing staff feedback, business impact, and implementation effort, carrying the highest-value changes through testing, iteration, production launch, and handoff.\nBuilt data and optimization tools to guide pricing and operational decisions, including a staffing model that identified ~$3,400/month in potential slow-season savings.\nEstimator data plane notes\n2\nAnalogic\nProduct Management Intern\nAug 2025 – May 2026\nBoston, MA\nGTM\nHardware\nSEMICON\nBrand Identity"
+   "text": "Experience\nProduct management, analytics, and go-to-market across global tech brands.\nEducation\nCalifornia State University, East Bay\nM.S. Business Analytics · STEM-designated\nExpected Dec 2026 · Hayward, SF Bay Area, California, USA\n6+\nYears in product & growth\n118M\nUsers reached\n60M+\nImpressions generated\n3\nInternships (AI, hardware & operations)\nCompanies I've worked with\nBlue Ocean Window Cleaning\nAnalogic\nAnalogic\nAtlasNova\nAtlasNova AI\nCSU East Bay\nTECNO\nTECNO Mobile\nTelenor\nTelenor\nGarena\nGarena Free Fire\nOPPO\nOPPO Mobile\nWork History\n1\nBlue Ocean Window Cleaning\nBusiness Operations Intern\nJun 2026 – Sep 2026\nSan Diego, CA\nProduct Requirements\nNext.js\nHouseCall Pro\nOptimization\nGathered requirements directly from the owner and staff, translating business and user needs into product requirements for a Next.js quoting application using HouseCall Pro data.\nPrioritized workflow improvements by balancing staff feedback, business impact, and implementation effort, carrying the highest-value changes through testing, iteration, production launch, and handoff.\nBuilt data and optimization tools to guide pricing and operational decisions, including a staffing model that identified ~$3,400/month in potential slow-season savings.\nEstimator data plane notes\n2\nAnalogic\nProduct Management Intern\nAug 2025 – May 2026\nBoston, MA\nGTM\nHardware\nSEMICON\nBrand Identity"
   },
   {
    "id": 18,
@@ -600,7 +600,7 @@
    "pageTitle": "Ali Raza · Contact",
    "heading": "Contact",
    "url": "https://alirazaai.page/contact",
-   "text": "Contact\nLet's build something. Reach out anytime.\nBased in Hayward, SF Bay Area"
+   "text": "Contact\nLet's build something. Reach out anytime.\nBased in Hayward, SF Bay Area, California, USA"
   },
   {
    "id": 75,
@@ -1336,7 +1336,7 @@
    "pageTitle": "Ali Raza CV (PDF)",
    "heading": "Ali Raza",
    "url": "https://alirazaai.page/experience",
-   "text": "Ali Raza\nHayward, CA | axraza55@gmail.com | linkedin.com/in/ali-raza-2548880 | github.com/aliraza2025 | alirazaportfolio2026.netlify.app"
+   "text": "Ali Raza\nHayward, CA, USA (San Francisco Bay Area) | axraza55@gmail.com | linkedin.com/in/ali-raza-2548880 | github.com/aliraza2025 | alirazaai.page"
   },
   {
    "id": 167,
