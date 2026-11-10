@@ -22,6 +22,7 @@ const PAGES = [
   { file: "crediclip.html", path: "/crediclip", title: "CrediClip write-up" },
   { file: "presentations.html", path: "/presentations", title: "Presentations" },
   { file: "contact.html", path: "/contact", title: "Contact" },
+  { file: "services.html", path: "/services", title: "Work with me" },
   { file: "about-this-site.html", path: "/about-this-site", title: "About this site" },
   { file: "sources.html", path: "/sources", title: "Sources" },
   { file: "notes/index.html", path: "/notes/", title: "Field notes" },
