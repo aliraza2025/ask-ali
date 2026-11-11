@@ -1,6 +1,6 @@
 {
  "site": "https://alirazaai.page",
- "builtAt": "2026-11-10T23:50:25.403Z",
+ "builtAt": "2026-11-11T07:00:23.259Z",
  "chunks": [
   {
    "id": 0,
@@ -136,7 +136,7 @@
    "pageTitle": "Ali Raza · Product Manager · Data Analyst · AI Builder",
    "heading": "Get in Touch",
    "url": "https://alirazaai.page/#contact-heading",
-   "text": "Get in Touch\nBased in Hayward, SF Bay Area, California, USA. Leave a message below and it goes straight to my inbox,\nbook a 30-minute call, or reach me on LinkedIn, GitHub, or email. For project work, see\nWork with me ."
+   "text": "Get in Touch\nBased in Hayward, SF Bay Area, California, USA. Leave a message below and it goes straight to my inbox,\nbook a 30-minute call, or reach me on LinkedIn, GitHub, or email."
   },
   {
    "id": 17,
@@ -600,7 +600,7 @@
    "pageTitle": "Ali Raza · Contact",
    "heading": "Contact",
    "url": "https://alirazaai.page/contact",
-   "text": "Contact\nLet's build something. Reach out anytime. Hiring, or need help with a project? See how I work .\nBased in Hayward, SF Bay Area, California, USA"
+   "text": "Contact\nLet's build something. Reach out anytime.\nBased in Hayward, SF Bay Area, California, USA"
   },
   {
    "id": 75,
@@ -728,7 +728,7 @@
    "pageTitle": "About this site · Ali Raza",
    "heading": "Changelog",
    "url": "https://alirazaai.page/about-this-site#changelog",
-   "text": "Changelog\nNov 10, 2026 Added a Work with me page for founders and teams, plus plain-text summaries of the site for AI assistants at /llms.txt and /llms-full.txt .\nNov 3, 2026 Added Field notes: my CrediClip and Blue Ocean estimator engineering notes now live on this site.\nNov 3, 2026 Moved the site to alirazaai.page. Old links redirect automatically.\nNov 3, 2026 Launched the “Ask my AI” assistant and a new studio homepage with Ali’s AI, an avatar you can type or talk to. Added Book a call, this page, and the Sources page.\nNov 2, 2026 Added irha.ai, where I’m co-founder leading product.\nOct 30, 2026 Added my Hugging Face profile. Accessibility pass: mobile menu, skip links, and button contrast.\nOct 29, 2026 Made the site easier for search engines to crawl: sitemap, robots.txt, and canonical tags.\nOct 26, 2026 Linked the Blue Ocean estimator engineering notes and the CrediClip data plane article.\nOct 22, 2026 Redesigned the Presentations page and added the Deel Local XI growth proposal.\nOct 16, 2026 Updated my CV for Fall 2026 and added the Presentations page.\nOct 7, 2026 Published the CrediClip research write-up.\nSep 11, 2026 Added the Creative portfolio section."
+   "text": "Changelog\nNov 3, 2026 Added Field notes: my CrediClip and Blue Ocean estimator engineering notes now live on this site.\nNov 3, 2026 Moved the site to alirazaai.page. Old links redirect automatically.\nNov 3, 2026 Launched the “Ask my AI” assistant and a new studio homepage with Ali’s AI, an avatar you can type or talk to. Added Book a call, this page, and the Sources page.\nNov 2, 2026 Added irha.ai, where I’m co-founder leading product.\nOct 30, 2026 Added my Hugging Face profile. Accessibility pass: mobile menu, skip links, and button contrast.\nOct 29, 2026 Made the site easier for search engines to crawl: sitemap, robots.txt, and canonical tags.\nOct 26, 2026 Linked the Blue Ocean estimator engineering notes and the CrediClip data plane article.\nOct 22, 2026 Redesigned the Presentations page and added the Deel Local XI growth proposal.\nOct 16, 2026 Updated my CV for Fall 2026 and added the Presentations page.\nOct 7, 2026 Published the CrediClip research write-up.\nSep 11, 2026 Added the Creative portfolio section."
   },
   {
    "id": 91,
