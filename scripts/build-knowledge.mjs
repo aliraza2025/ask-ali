@@ -30,6 +30,7 @@ const PAGES = [
   { file: "notes/crediclip-ai-product-quality.html", path: "/notes/crediclip-ai-product-quality", title: "Field note: CrediClip AI product quality" },
   { file: "notes/estimator-data-plane.html", path: "/notes/estimator-data-plane", title: "Field note: Blue Ocean estimator data plane" },
   { file: "notes/raasta-product-experiment.html", path: "/notes/raasta-product-experiment", title: "Field note: Raasta product experiment" },
+  { file: "notes/receipts-evidence-first-pm-skills.html", path: "/notes/receipts-evidence-first-pm-skills", title: "Field note: Receipts open-source PM skills" },
 ];
 
 const MAX_CHUNK = 1400;
