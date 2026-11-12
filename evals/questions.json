@@ -1,7 +1,7 @@
 [
   { "q": "What is CrediClip?", "expectPage": "CrediClip", "answerable": true },
   { "q": "How was CrediClip evaluated?", "expectPage": "CrediClip write-up", "answerable": true },
-  { "q": "What does Ali do at irha.ai?", "expectText": "irha", "answerable": true },
+  { "q": "What did Ali work on at irha.ai?", "expectText": "irha", "answerable": true },
   { "q": "What pricing plans does irha.ai have?", "expectText": "$99", "answerable": true },
   { "q": "What did Ali build for Blue Ocean Window Cleaning?", "expectText": "Blue Ocean", "answerable": true },
   { "q": "Where did Ali work before grad school?", "expectText": "TECNO", "answerable": true },

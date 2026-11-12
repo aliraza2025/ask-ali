@@ -1,6 +1,6 @@
 {
  "site": "https://alirazaai.page",
- "builtAt": "2026-11-11T07:07:23.519Z",
+ "builtAt": "2026-11-12T02:26:56.603Z",
  "chunks": [
   {
    "id": 0,
@@ -16,7 +16,7 @@
    "pageTitle": "Ali Raza · Product Manager · Data Analyst · AI Builder",
    "heading": "I build real products, not just decks .",
    "url": "https://alirazaai.page/#hero-heading",
-   "text": "I build real products, not just decks .\nLook around the studio, or ask Ali’s AI about my work.\nMeet Ali’s AI\nView case studies\nAI receptionist venture\nirha.ai\nHardware launch\nAnalogic AVA\nThe human behind the AI\nExperience\nProduct, data, growth\nCase studies\nVideo credibility AI\nCrediClip\nWhere claims come from\nSources\nAli’s AI\nWhat is CrediClip?\nWhat does Ali do at irha.ai?\nWhat did Ali build at Blue Ocean?\nHow can I reach Ali?\nAI receptionist venture irha.ai\nHardware launch Analogic AVA\nThe human behind the AI Experience\nProduct, data, growth Case studies\nVideo credibility AI CrediClip\nWhere claims come from Sources\nPause motion\nSpoken answers\nSimple view\nHide avatar\n118M\nUsers reached\n60M+\nImpressions generated\n0→1\nAI MVPs shipped\nMSBA\nExpected Dec 2026"
+   "text": "I build real products, not just decks .\nLook around the studio, or ask Ali’s AI about my work.\nMeet Ali’s AI\nView case studies\nPast AI receptionist venture\nirha.ai\nHardware launch\nAnalogic AVA\nThe human behind the AI\nExperience\nProduct, data, growth\nCase studies\nVideo credibility AI\nCrediClip\nWhere claims come from\nSources\nAli’s AI\nWhat is CrediClip?\nWhat did Ali work on at irha.ai?\nWhat did Ali build at Blue Ocean?\nHow can I reach Ali?\nPast AI receptionist venture irha.ai\nHardware launch Analogic AVA\nThe human behind the AI Experience\nProduct, data, growth Case studies\nVideo credibility AI CrediClip\nWhere claims come from Sources\nPause motion\nSpoken answers\nSimple view\nHide avatar\n118M\nUsers reached\n60M+\nImpressions generated\n0→1\nAI MVPs shipped\nMSBA\nExpected Dec 2026"
   },
   {
    "id": 2,
@@ -40,7 +40,7 @@
    "pageTitle": "Ali Raza · Product Manager · Data Analyst · AI Builder",
    "heading": "irha.ai: AI Receptionist for Service Businesses",
    "url": "https://alirazaai.page/#portfolio-heading",
-   "text": "irha.ai: AI Receptionist for Service Businesses\nProblem\nService businesses lose jobs to missed after-hours calls, overloaded office staff, and voicemails customers won’t leave, while leads slip between phone, SMS, and CRM.\nMy role\nCo-founder, Product. I own product strategy and roadmap, voice agent and call flow design, CRM integrations, positioning and pricing, the website and demo, and customer discovery and sales.\nResult\nBuilt a 24/7 AI receptionist that answers, triages, and books calls and hands off to Housecall Pro, Jobber, and ServiceTitan, with a self-serve trial and three usage-based plans from $99 to $225 a month. Now in early access.\nVisit irha.ai\nLinkedIn\nCase Study 03\nOperations\nNext.js\nHouseCall Pro"
+   "text": "irha.ai: AI Receptionist for Service Businesses\nProblem\nService businesses lose jobs to missed after-hours calls, overloaded office staff, and voicemails customers won’t leave, while leads slip between phone, SMS, and CRM.\nMy role\nPast work; I am no longer involved. I led product strategy and roadmap, voice agent and call flow design, CRM integrations, positioning and pricing, the website and demo, and customer discovery and sales.\nResult\nBuilt a 24/7 AI receptionist that answers, triages, and books calls and hands off to Housecall Pro, Jobber, and ServiceTitan, with a self-serve trial and three usage-based plans from $99 to $225 a month. It was in early access when I worked on it.\nVisit irha.ai\nLinkedIn\nCase Study 03\nOperations\nNext.js\nHouseCall Pro"
   },
   {
    "id": 5,
@@ -184,7 +184,7 @@
    "pageTitle": "Ali Raza · Projects",
    "heading": "Ventures",
    "url": "https://alirazaai.page/projects#ventures-heading",
-   "text": "Ventures\nirha.ai (opens in new tab)\nCo-founder, Product\nAI receptionist for service businesses. It answers calls 24/7, books and confirms jobs, captures and qualifies leads, and hands off to Housecall Pro, Jobber, and ServiceTitan.\nI lead product strategy and roadmap, voice agent and call flow design, CRM integrations, positioning and pricing, the website and demo, and customer discovery and sales.\nAI voice agent\nB2B SaaS\nEarly access\nWebsite\nLinkedIn\nCrediClip\nProduct Owner & Builder\nAI system that turns TikTok, Instagram, and YouTube Shorts links into explainable credibility scores, with risk flags, evidence coverage, and claim-level notes.\nI owned the product from problem definition and workflow design through AI prototyping, testing, and deployment, and shipped a FastAPI workflow with OCR/ASR extraction and queue-backed processing.\nAI / LLM\n0 → 1 MVP\nLive demo\nCase study\nLive demo\nGitHub"
+   "text": "Ventures\nirha.ai (opens in new tab)\nPast work\nAI receptionist for service businesses. It answers calls 24/7, books and confirms jobs, captures and qualifies leads, and hands off to Housecall Pro, Jobber, and ServiceTitan.\nI led product strategy and roadmap, voice agent and call flow design, CRM integrations, positioning and pricing, the website and demo, and customer discovery and sales. I am no longer involved.\nAI voice agent\nB2B SaaS\nPast work\nWebsite\nLinkedIn\nCrediClip\nProduct Owner & Builder\nAI system that turns TikTok, Instagram, and YouTube Shorts links into explainable credibility scores, with risk flags, evidence coverage, and claim-level notes.\nI owned the product from problem definition and workflow design through AI prototyping, testing, and deployment, and shipped a FastAPI workflow with OCR/ASR extraction and queue-backed processing.\nAI / LLM\n0 → 1 MVP\nLive demo\nCase study\nLive demo\nGitHub"
   },
   {
    "id": 23,
@@ -704,7 +704,7 @@
    "pageTitle": "About this site · Ali Raza",
    "heading": "How I write about my work",
    "url": "https://alirazaai.page/about-this-site#rules",
-   "text": "How I write about my work\nNumbers come from a source I can point to: my CV, a project repository, an evaluation report, or the product itself. The Sources page lists them.\nBuilt, in progress, and planned are labeled differently. irha.ai, for example, is described as early access, not as a finished product.\nTeam work says what my part was. Each case study has a “My role” section.\nClient and customer data stays private. The Blue Ocean Window Cleaning tools are private repositories, so I publish engineering notes about them instead.\nMistakes get fixed in the open. If you spot one, tell me and the fix will show up in the changelog below."
+   "text": "How I write about my work\nNumbers come from a source I can point to: my CV, a project repository, an evaluation report, or the product itself. The Sources page lists them.\nBuilt, in progress, and planned are labeled differently. Prototypes in the project catalog, for example, list what was and was not tested.\nTeam work says what my part was. Each case study has a “My role” section.\nClient and customer data stays private. The Blue Ocean Window Cleaning tools are private repositories, so I publish engineering notes about them instead.\nMistakes get fixed in the open. If you spot one, tell me and the fix will show up in the changelog below."
   },
   {
    "id": 88,
@@ -736,7 +736,7 @@
    "pageTitle": "About this site · Ali Raza",
    "heading": "Changelog",
    "url": "https://alirazaai.page/about-this-site#changelog",
-   "text": "Changelog\nNov 10, 2026 Released Receipts , open-source evidence-first PM skills for AI coding agents. Added a Work with me page for founders and teams, plus plain-text summaries of the site for AI assistants at /llms.txt and /llms-full.txt .\nNov 3, 2026 Added Field notes: my CrediClip and Blue Ocean estimator engineering notes now live on this site.\nNov 3, 2026 Moved the site to alirazaai.page. Old links redirect automatically.\nNov 3, 2026 Launched the “Ask my AI” assistant and a new studio homepage with Ali’s AI, an avatar you can type or talk to. Added Book a call, this page, and the Sources page.\nNov 2, 2026 Added irha.ai, where I’m co-founder leading product.\nOct 30, 2026 Added my Hugging Face profile. Accessibility pass: mobile menu, skip links, and button contrast.\nOct 29, 2026 Made the site easier for search engines to crawl: sitemap, robots.txt, and canonical tags.\nOct 26, 2026 Linked the Blue Ocean estimator engineering notes and the CrediClip data plane article.\nOct 22, 2026 Redesigned the Presentations page and added the Deel Local XI growth proposal.\nOct 16, 2026 Updated my CV for Fall 2026 and added the Presentations page.\nOct 7, 2026 Published the CrediClip research write-up.\nSep 11, 2026 Added the Creative portfolio section."
+   "text": "Changelog\nNov 11, 2026 irha.ai is now listed as past work. Published the Receipts launch article on DEV and released Receipts v0.1.1.\nNov 10, 2026 Released Receipts , open-source evidence-first PM skills for AI coding agents. Added a Work with me page for founders and teams, plus plain-text summaries of the site for AI assistants at /llms.txt and /llms-full.txt .\nNov 3, 2026 Added Field notes: my CrediClip and Blue Ocean estimator engineering notes now live on this site.\nNov 3, 2026 Moved the site to alirazaai.page. Old links redirect automatically.\nNov 3, 2026 Launched the “Ask my AI” assistant and a new studio homepage with Ali’s AI, an avatar you can type or talk to. Added Book a call, this page, and the Sources page.\nNov 2, 2026 Added irha.ai.\nOct 30, 2026 Added my Hugging Face profile. Accessibility pass: mobile menu, skip links, and button contrast.\nOct 29, 2026 Made the site easier for search engines to crawl: sitemap, robots.txt, and canonical tags.\nOct 26, 2026 Linked the Blue Ocean estimator engineering notes and the CrediClip data plane article.\nOct 22, 2026 Redesigned the Presentations page and added the Deel Local XI growth proposal.\nOct 16, 2026 Updated my CV for Fall 2026 and added the Presentations page.\nOct 7, 2026 Published the CrediClip research write-up.\nSep 11, 2026 Added the Creative portfolio section."
   },
   {
    "id": 92,
@@ -776,7 +776,7 @@
    "pageTitle": "Sources · Ali Raza",
    "heading": "irha.ai",
    "url": "https://alirazaai.page/sources#irha",
-   "text": "irha.ai\nAI receptionist for service businesses, where I’m co-founder leading product. Early access.\nirha.ai Product, integrations, plans, and pricing\nLinkedIn company page Company updates"
+   "text": "irha.ai\nAI receptionist for service businesses. Past work: I led product there and am no longer involved.\nirha.ai Product, integrations, plans, and pricing\nLinkedIn company page Company updates"
   },
   {
    "id": 97,
